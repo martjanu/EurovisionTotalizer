@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EurovisionTotalizer.ConsoleClient", "EurovisionTotalizer\EurovisionTotalizer.ConsoleClient.csproj", "{3ACAD6AD-92B4-4AFB-83A7-62D421656967}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{94A51CDC-EE1A-4FBB-B974-1CD4A6CE8AA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EurovisionTotalizer.Domain", "EurovisionTotalizer.Domain\EurovisionTotalizer.Domain.csproj", "{463B4135-28DC-40DE-A66B-83993414CEE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3ACAD6AD-92B4-4AFB-83A7-62D421656967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ACAD6AD-92B4-4AFB-83A7-62D421656967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ACAD6AD-92B4-4AFB-83A7-62D421656967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ACAD6AD-92B4-4AFB-83A7-62D421656967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{463B4135-28DC-40DE-A66B-83993414CEE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{463B4135-28DC-40DE-A66B-83993414CEE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{463B4135-28DC-40DE-A66B-83993414CEE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{463B4135-28DC-40DE-A66B-83993414CEE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3ACAD6AD-92B4-4AFB-83A7-62D421656967} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{463B4135-28DC-40DE-A66B-83993414CEE8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE2082C2-435A-4C21-B07D-E991EA9C584D}
+	EndGlobalSection
+EndGlobal
