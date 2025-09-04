@@ -1,4 +1,4 @@
-﻿namespace EurovisionTotalizer.Domain.Persistance.Interfaces;
+﻿namespace EurovisionTotalizer.Domain.Interfaces.Persistence;
 
 public interface IJsonSerializer
 {

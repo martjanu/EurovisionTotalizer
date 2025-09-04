@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
-using EurovisionTotalizer.Domain.Persistance.Interfaces;
+using EurovisionTotalizer.Domain.Interfaces.Persistence;
 
-namespace EurovisionTotalizer.Domain.Persistance.Serializations;
+namespace EurovisionTotalizer.Domain.Persistence.Serializations;
 
 public class SystemTextJsonSerializer : IJsonSerializer
 {

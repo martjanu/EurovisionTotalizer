@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using EurovisionTotalizer.Domain.Persistance.Interfaces;
+﻿using EurovisionTotalizer.Domain.Interfaces.Persistence;
 
-namespace EurovisionTotalizer.Domain.Persistance.Repositories;
+namespace EurovisionTotalizer.Domain.Persistence.Repositories;
 
-public class JsonStorageRepository<T> where T : class
+public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : class
 {
     private readonly string _filePath;
     private readonly IJsonSerializer _serializer;
@@ -17,7 +14,7 @@ public class JsonStorageRepository<T> where T : class
 
         if (!File.Exists(_filePath))
         {
-            SaveData(new List<T>()); // inicializuoja tuščią failą
+            SaveData(new List<T>());  
         }
     }
 
