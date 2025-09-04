@@ -4,6 +4,7 @@ namespace EurovisionTotalizer.Domain.Models;
 
 public class Country
 {
+    public int Id { get; set; }
     public string Name { get; set; } = "Missing Name";
     public bool IsInFinal { get; set; } = false;
     public SemiFinal SemiFinal { get; set; }
