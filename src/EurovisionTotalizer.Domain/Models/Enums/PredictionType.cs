@@ -3,6 +3,6 @@
 public enum PredictionType
 {
     DoesNotReachFinal,
-    ReachesFinal,
+    Last3InFinal,
     ExactPlaceInFinal
 }

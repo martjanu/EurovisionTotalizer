@@ -7,7 +7,7 @@ namespace EurovisionTotalizer.Domain.Core;
 
 public class EurovisionTotalizer
 {
-    public void ProcessPredictions()
+    public void Play()
     {
         var serializerFactory = new EurovisionTotalizerSerializationFactory();
         var serializer = serializerFactory.Create();

@@ -59,4 +59,10 @@ public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : clas
         items.RemoveAll(x => predicate(x));
         SaveData(items);
     }
+
+    public bool Exists(Func<T, bool> predicate)
+    {
+        var items = LoadData();
+        return items.Any(predicate);
+    }
 }

@@ -1,8 +1,10 @@
-﻿namespace EurovisionTotalizer.Domain.Models;
+﻿using EurovisionTotalizer.Domain.Interfaces;
 
-public class Participant
+namespace EurovisionTotalizer.Domain.Models;
+
+public class Participant : IHasName
 {
     public string Name { get; set; } = "Missing Name";
     public int TotalPoints { get; set; } = 0;
-    public IEnumerable<Prediction>? Predictions { get; set; }
+    public IEnumerable<SemifinalPrediction>? Predictions { get; set; }
 }
