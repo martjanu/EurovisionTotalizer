@@ -29,19 +29,34 @@ public class PointsController
     {
         foreach (var prediction in predictions)
         {
-            prediction = ScoreBoottum3Predictions(prediction);
-            prediction = ScoreTop10Predictions(prediction);
+            var country = _countries[prediction.Country!.Name];
+            ScoreBoottum3Predictions(prediction, country);
+            ScoreTop10Predictions(prediction, country);
         }
     }
 
-    private Prediction ScoreBoottum3Predictions(FinalPrediction prediction)
+    private void ScoreBoottum3Predictions(FinalPrediction prediction, Country country)
     {
-        return prediction;
+        if (prediction.IsBottom3
+            && prediction.PlaceInFinal == country.PlaceInFinal)
+        {
+            prediction.Points = 1;
+        }
     }
 
-    private Prediction ScoreTop10Predictions(FinalPrediction prediction)
+    private void ScoreTop10Predictions(FinalPrediction prediction, Country country)
     {
-        return prediction;
+        if (prediction.Country != country) return;
+
+        if (prediction.PlaceInFinal == country.PlaceInFinal)
+        {
+            prediction.Points = 2;
+        }
+        else if (prediction.PlaceInFinal + 1 == country.PlaceInFinal
+            || prediction.PlaceInFinal - 1 == country.PlaceInFinal)
+        {
+            prediction.Points = 1;
+        }
     }
 
     public int GetSemiFinalPoints(SemiFinal semiFinal, Participant participant, IEnumerable<SemifinalPrediction> predictions)
