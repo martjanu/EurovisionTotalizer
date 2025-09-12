@@ -1,9 +1,9 @@
 ﻿using EurovisionTotalizer.Domain.Models;
-using EurovisionTotalizer.Domain.Persistence.Interfaces;
+using EurovisionTotalizer.Domain.Persistence.Repositories;
 
 namespace EurovisionTotalizer.Domain.Validators;
 
-public class NameValidator<T> where T : class, IHasName
+public class NameValidator<T> : INameValidator where T : class, IHasName
 {
     private readonly IJsonStorageRepository<T> _repository;
 

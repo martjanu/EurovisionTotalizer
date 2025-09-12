@@ -3,7 +3,7 @@ using EurovisionTotalizer.Domain.Models;
 
 namespace EurovisionTotalizer.Domain.Checkers;
 
-public class PointsController
+public class PointsController : IPointsController
 {
     private readonly Dictionary<string, Country> _countries;
 
@@ -16,9 +16,9 @@ public class PointsController
     {
         foreach (var prediction in predictions)
         {
-           if (prediction.Type == PredictionType.DoesNotReachFinal
-                && !prediction.Country!.IsInFinal
-                && _countries.ContainsKey(prediction.Country.Name))
+            if (prediction.Type == PredictionType.DoesNotReachFinal
+                 && !prediction.Country!.IsInFinal
+                 && _countries.ContainsKey(prediction.Country.Name))
             {
                 prediction.Points = 1;
             }
@@ -64,7 +64,7 @@ public class PointsController
         return predictions
             .Where(p => p.Participant == participant
                         && p.Country!.SemiFinal == semiFinal)
-            .Sum(p => p.Points);  
+            .Sum(p => p.Points);
     }
 
     public int GetFinalPoints(Participant participant, IEnumerable<FinalPrediction> predictions)

@@ -1,5 +1,4 @@
 ﻿using System.Text.Json;
-using EurovisionTotalizer.Domain.Persistence.Interfaces;
 
 namespace EurovisionTotalizer.Domain.Persistence.Serializations;
 

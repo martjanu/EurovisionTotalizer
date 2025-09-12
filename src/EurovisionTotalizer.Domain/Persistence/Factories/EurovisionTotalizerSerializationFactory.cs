@@ -1,5 +1,4 @@
-﻿using EurovisionTotalizer.Domain.Persistence.Interfaces;
-using EurovisionTotalizer.Domain.Persistence.Serializations;
+﻿using EurovisionTotalizer.Domain.Persistence.Serializations;
 
 namespace EurovisionTotalizer.Domain.Persistence.Factories;
 

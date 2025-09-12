@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace EurovisionTotalizer.Domain.Services;
 
-namespace EurovisionTotalizer.Domain.Services
+public class EurovisionTotalizerService
 {
-    internal class EurovisionTotalizerService
-    {
-    }
+
 }

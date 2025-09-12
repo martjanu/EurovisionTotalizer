@@ -1,4 +1,4 @@
-﻿namespace EurovisionTotalizer.Domain.Persistence.Interfaces;
+﻿namespace EurovisionTotalizer.Domain.Persistence.Repositories;
 
 public interface IJsonStorageRepository<T> where T : class
 {
