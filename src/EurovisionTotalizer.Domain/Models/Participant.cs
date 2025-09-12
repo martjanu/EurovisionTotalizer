@@ -1,6 +1,4 @@
-﻿using EurovisionTotalizer.Domain.Interfaces;
-
-namespace EurovisionTotalizer.Domain.Models;
+﻿namespace EurovisionTotalizer.Domain.Models;
 
 public class Participant : IHasName
 {

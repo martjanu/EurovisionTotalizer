@@ -1,5 +1,4 @@
-﻿using EurovisionTotalizer.Domain.Interfaces;
-using EurovisionTotalizer.Domain.Models.Enums;
+﻿using EurovisionTotalizer.Domain.Enums;
 
 namespace EurovisionTotalizer.Domain.Models;
 

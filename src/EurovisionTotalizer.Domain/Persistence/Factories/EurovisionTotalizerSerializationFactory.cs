@@ -1,7 +1,7 @@
-﻿using EurovisionTotalizer.Domain.Interfaces.Persistence;
+﻿using EurovisionTotalizer.Domain.Persistence.Interfaces;
 using EurovisionTotalizer.Domain.Persistence.Serializations;
 
-namespace EurovisionTotalizer.Domain.Core.Factories.Persistence;
+namespace EurovisionTotalizer.Domain.Persistence.Factories;
 
 public class EurovisionTotalizerSerializationFactory
 {

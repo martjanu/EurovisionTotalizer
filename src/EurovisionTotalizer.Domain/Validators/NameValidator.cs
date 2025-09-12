@@ -1,7 +1,7 @@
-﻿using EurovisionTotalizer.Domain.Interfaces;
-using EurovisionTotalizer.Domain.Interfaces.Persistence;
+﻿using EurovisionTotalizer.Domain.Models;
+using EurovisionTotalizer.Domain.Persistence.Interfaces;
 
-namespace EurovisionTotalizer.Domain.Core.Validators;
+namespace EurovisionTotalizer.Domain.Validators;
 
 public class NameValidator<T> where T : class, IHasName
 {

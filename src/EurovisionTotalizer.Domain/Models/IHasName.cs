@@ -1,5 +1,4 @@
-﻿
-namespace EurovisionTotalizer.Domain.Interfaces;
+﻿namespace EurovisionTotalizer.Domain.Models;
 
 public interface IHasName
 {

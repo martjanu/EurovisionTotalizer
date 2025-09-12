@@ -1,4 +1,4 @@
-﻿namespace EurovisionTotalizer.Domain.Models.Enums;
+﻿namespace EurovisionTotalizer.Domain.Enums;
 
 public enum PredictionType
 {

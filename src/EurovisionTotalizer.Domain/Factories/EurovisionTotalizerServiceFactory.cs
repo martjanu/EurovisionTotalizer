@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EurovisionTotalizer.Domain.Core.Factories
+namespace EurovisionTotalizer.Domain.Factories
 {
     internal class EurovisionTotalizerServiceFactory
     {

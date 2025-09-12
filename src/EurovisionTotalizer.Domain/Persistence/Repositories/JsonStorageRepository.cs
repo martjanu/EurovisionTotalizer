@@ -1,4 +1,4 @@
-﻿using EurovisionTotalizer.Domain.Interfaces.Persistence;
+﻿using EurovisionTotalizer.Domain.Persistence.Interfaces;
 
 namespace EurovisionTotalizer.Domain.Persistence.Repositories;
 
