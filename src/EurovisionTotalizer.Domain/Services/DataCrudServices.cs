@@ -2,31 +2,31 @@
 
 namespace EurovisionTotalizer.Domain.Services;
 
-public class DataCrudServices
+public class DataCrudServices<T> where T : class
 {
-    private readonly IJsonStorageRepository _jsonStorageRepository;
+    private readonly IJsonStorageRepository<T> _jsonStorageRepository;
 
-    public DataCrudServices(IJsonStorageRepository jsonStorageRepository)
+    public DataCrudServices(IJsonStorageRepository<T> jsonStorageRepository)
     {
         _jsonStorageRepository = jsonStorageRepository;
     }
 
-    public void AddData<T>(T item) where T : class
+    public void AddData(T item)
     {
         _jsonStorageRepository.Add(item);
     }
 
-    public IEnumerable<T> GetAllData<T>() where T : class
+    public IEnumerable<T> GetAllData()
     {
-        return _jsonStorageRepository.GetAll<T>();
+        return _jsonStorageRepository.GetAll();
     }
 
-    public void UpdateData<T>(Func<T, bool> predicate, T newItem) where T : class
+    public void UpdateData(Func<T, bool> predicate, T newItem)
     {
         _jsonStorageRepository.Update(predicate, newItem);
     }
 
-    public void DeleteData<T>(Func<T, bool> predicate) where T : class
+    public void DeleteData(Func<T, bool> predicate)
     {
         _jsonStorageRepository.Delete(predicate);
     }
