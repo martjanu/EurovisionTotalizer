@@ -1,13 +1,13 @@
 ﻿using EurovisionTotalizer.Domain.Enums;
 using EurovisionTotalizer.Domain.Models;
 
-namespace EurovisionTotalizer.Domain.Checkers;
+namespace EurovisionTotalizer.Domain.Calculators;
 
-public class PointsController : IPointsController
+public class ScoreController : IScoreController
 {
     private readonly Dictionary<string, Country> _countries;
 
-    public PointsController(IEnumerable<Country> countries)
+    public ScoreController(IEnumerable<Country> countries)
     {
         _countries = countries.ToDictionary(c => c.Name);
     }

@@ -1,9 +1,9 @@
 ﻿using EurovisionTotalizer.Domain.Enums;
 using EurovisionTotalizer.Domain.Models;
 
-namespace EurovisionTotalizer.Domain.Checkers
+namespace EurovisionTotalizer.Domain.Calculators
 {
-    public interface IPointsController
+    public interface IScoreController
     {
         int GetFinalPoints(Participant participant, IEnumerable<FinalPrediction> predictions);
         int GetSemiFinalPoints(SemiFinal semiFinal, Participant participant, IEnumerable<SemifinalPrediction> predictions);
