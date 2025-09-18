@@ -24,16 +24,10 @@ public class EurovisionTotalizerCOntrollerFactory
         var _participantRankerFactory = new ParticipantRankerFactory();
         var _participantRanker = _participantRankerFactory.Create(_participantRepository);
 
-        var _countryDataCrudFactory = new DataCrudServiceFactory<Country>();
-        var _countryDataCrud = _countryDataCrudFactory.Create(_countryRepository);
-
-        var _participantDataCrudFactory = new DataCrudServiceFactory<Participant>();
-        var _participantDataCrud = _participantDataCrudFactory.Create(_participantRepository);
-
         return new EurovisionTotalizerCOntroller(
             _consoleActions,
             _participantRanker,
-            _countryDataCrud,
-            _participantDataCrud);
+            _countryRepository,
+            _participantRepository);
     }
 }

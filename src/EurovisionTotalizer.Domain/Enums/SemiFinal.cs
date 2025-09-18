@@ -2,6 +2,6 @@
 
 public enum SemiFinal
 {
-    first = 1,
-    second = 2
+    First,
+    Second
 }

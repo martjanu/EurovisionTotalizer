@@ -8,10 +8,7 @@ public class ConsoleActions : IConsoleActions
         "2. Add Prediction or Country",
         "3. View Predictions or Countries",
         "4. Delete Participant or Country",
-        "5. Update Participant or Country",
-        "6. Make Semifinal Predictions",
-        "7. Make Final Predictions",
-        "8. Exit"
+        "5. Exit"
     };
 
     public void ShowCommands()

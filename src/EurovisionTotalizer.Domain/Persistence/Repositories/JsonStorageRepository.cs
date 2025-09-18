@@ -1,4 +1,6 @@
-﻿using EurovisionTotalizer.Domain.Persistence.Serializera;
+﻿using System.Xml.Linq;
+using EurovisionTotalizer.Domain.Models;
+using EurovisionTotalizer.Domain.Persistence.Serializera;
 
 namespace EurovisionTotalizer.Domain.Persistence.Repositories;
 
@@ -42,10 +44,10 @@ public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : clas
         return LoadData();
     }
 
-    public void Update(Func<T, bool> predicate, T newItem)
+    public void Update(IHasName item, T newItem)
     {
         var items = LoadData();
-        var index = items.FindIndex(x => predicate(x));
+        var index = items.FindIndex(x => (x as IHasName).Name == item.Name);
         if (index >= 0)
         {
             items[index] = newItem;
@@ -53,10 +55,12 @@ public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : clas
         }
     }
 
-    public void Delete(Func<T, bool> predicate)
+    public void Delete(IHasName item)
     {
         var items = LoadData();
-        items.RemoveAll(x => predicate(x));
+        items.RemoveAll(x =>
+            (x as dynamic).Name == item.Name
+        );
         SaveData(items);
     }
 
