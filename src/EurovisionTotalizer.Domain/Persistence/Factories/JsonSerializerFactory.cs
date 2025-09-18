@@ -1,8 +1,8 @@
-﻿using EurovisionTotalizer.Domain.Persistence.Serializations;
+﻿using EurovisionTotalizer.Domain.Persistence.Serializera;
 
 namespace EurovisionTotalizer.Domain.Persistence.Factories;
 
-public class EurovisionTotalizerSerializationFactory
+public class JsonSerializerFactory
 {
     public IJsonSerializer Create() => new SystemTextJsonSerializer();
 }

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace EurovisionTotalizer.Domain.Persistence.Serializations;
+namespace EurovisionTotalizer.Domain.Persistence.Serializera;
 
 public class SystemTextJsonSerializer : IJsonSerializer
 {

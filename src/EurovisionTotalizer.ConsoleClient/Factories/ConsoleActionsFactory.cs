@@ -4,6 +4,6 @@ namespace EurovisionTotalizer.ConsoleClient.Factories;
 
 public class ConsoleActionsFactory
 {
-    public static IConsoleActions Create() 
+    public IConsoleActions Create() 
         => new ConsoleActions();
 }

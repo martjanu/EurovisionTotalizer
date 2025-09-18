@@ -2,11 +2,11 @@
 
 namespace EurovisionTotalizer.Domain.Services;
 
-public class DataCrudServices<T> where T : class
+public class DataCrudService<T> : IDataCrudService<T> where T : class
 {
     private readonly IJsonStorageRepository<T> _jsonStorageRepository;
 
-    public DataCrudServices(IJsonStorageRepository<T> jsonStorageRepository)
+    public DataCrudService(IJsonStorageRepository<T> jsonStorageRepository)
     {
         _jsonStorageRepository = jsonStorageRepository;
     }

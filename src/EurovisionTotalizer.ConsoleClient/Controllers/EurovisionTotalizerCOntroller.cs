@@ -1,17 +1,30 @@
 ﻿using EurovisionTotalizer.Domain.Services;
 using EurovisionTotalizer.ConsoleClient.UserActons;
+using EurovisionTotalizer.Domain.Rankers;
+using EurovisionTotalizer.Domain.Models;
 
 namespace EurovisionTotalizer.ConsoleClient.Controllers;
 
 public class EurovisionTotalizerCOntroller
 {
     private readonly IConsoleActions _consoleClient;
+    private readonly IParticipantRanker _participantRanker;
+    private readonly IDataCrudService<Country> _countryService;
+    private readonly IDataCrudService<Participant> _participantService;
+
     private bool isRunning = true;
 
     public EurovisionTotalizerCOntroller(
-        IConsoleActions consoleClient)
+        IConsoleActions consoleClient,
+        IParticipantRanker participantRanker,
+         IDataCrudService<Country> countryService,
+        IDataCrudService<Participant> participantService)
     {
         _consoleClient = consoleClient;
+        _participantRanker = participantRanker;
+        _participantService = participantService;
+        _countryService = countryService;
+        _participantService = participantService;
     }
 
     public void Run()
@@ -20,41 +33,34 @@ public class EurovisionTotalizerCOntroller
         while (isRunning)
         {
             var input = _consoleClient.ReadInput();
-            switch (input)
+            var result = input switch
             {
-                case "1":
-                    _consoleClient.ShowMessage("View Rankings selected.");
-                    break;
-                case "2":
-                    _consoleClient.ShowMessage("Add Prediction or Country selected.");
-                    break;
-                case "3":
-                    _consoleClient.ShowMessage("View Predictions or Countries selected.");
-                    break;
-                case "4":
-                    _consoleClient.ShowMessage("Delete Participant or Country selected.");
-                    break;
-                case "5":
-                    _consoleClient.ShowMessage("Update Participant or Country selected.");
-                    break;
-                case "6":
-                    _consoleClient.ShowMessage("Make Semifinal Predictions selected.");
-                    break;
-                case "7":
-                    _consoleClient.ShowMessage("Make Final Predictions selected.");
-                    break;
-                case "8":
-                    Exit();
-                    break;
-                default:
-                    _consoleClient.ShowMessage("Invalid option. Please try again.");
-                    break;
-            }
+                "1" => ShowRankings(),
+                "8" => Exit("Programs is ended"),
+                _ => CommandNotFound(input ?? string.Empty)
+            };
         }
     }
 
-    private void Exit()
+    private bool CommandNotFound(string command)
     {
-        isRunning = !isRunning;
+        _consoleClient.ShowMessage($"Command '{command}' not found. Please try again.");
+        return true;
+    }
+
+    private bool Exit(string message)
+    {
+        _consoleClient.ShowMessage(message);
+        return !isRunning;
+    }
+
+    private bool ShowRankings()
+    {
+        var rankedParticipants = _participantRanker.GetRankedParticipants();
+        foreach (var participant in rankedParticipants)
+        {
+            _consoleClient.ShowMessage($"{participant.Name} - {participant.TotalPoints} points");
+        }
+        return true;
     }
 }

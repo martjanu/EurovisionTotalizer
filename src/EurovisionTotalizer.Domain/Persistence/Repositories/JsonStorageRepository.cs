@@ -1,4 +1,4 @@
-﻿using EurovisionTotalizer.Domain.Persistence.Serializations;
+﻿using EurovisionTotalizer.Domain.Persistence.Serializera;
 
 namespace EurovisionTotalizer.Domain.Persistence.Repositories;
 
