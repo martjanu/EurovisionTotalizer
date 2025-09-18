@@ -3,6 +3,7 @@ using EurovisionTotalizer.Domain.Rankers;
 using EurovisionTotalizer.Domain.Models;
 using EurovisionTotalizer.Domain.Persistence.Repositories;
 using EurovisionTotalizer.Domain.Enums;
+using EurovisionTotalizer.Domain.Calculators;
 
 namespace EurovisionTotalizer.ConsoleClient.Controllers;
 
@@ -12,6 +13,7 @@ public class EurovisionTotalizerCOntroller
     private readonly IParticipantRanker _participantRanker;
     private readonly IJsonStorageRepository<Country> _countryRepository;
     private readonly IJsonStorageRepository<Participant> _participantRepository;
+    private readonly IScoreController _scoreController;
 
     private bool isRunning = true;
 
@@ -19,12 +21,14 @@ public class EurovisionTotalizerCOntroller
         IConsoleActions consoleClient,
         IParticipantRanker participantRanker,
         IJsonStorageRepository<Country> countryRepository,
-        IJsonStorageRepository<Participant> participantRepository)
+        IJsonStorageRepository<Participant> participantRepository,
+        IScoreController scoreController)
     {
         _consoleClient = consoleClient;
         _participantRanker = participantRanker;
         _countryRepository = countryRepository;
         _participantRepository = participantRepository;
+        _scoreController = scoreController;
     }
 
     public void Run()
@@ -99,7 +103,7 @@ public class EurovisionTotalizerCOntroller
             var participants = _participantRepository.GetAll();
             foreach (var participant in participants)
             {
-                _consoleClient.ShowMessage($"{participant.Name} - Total Points: {participant.TotalPoints}");
+                _consoleClient.ShowMessage($"{participant.Name}");
             }
         }
         else
@@ -164,10 +168,19 @@ public class EurovisionTotalizerCOntroller
 
     private bool ShowRankings()
     {
+        _scoreController.ResetAllPoints(_participantRepository.GetAll());
+
+        _scoreController.ScoreSemifinalPredictions(
+            _participantRepository.GetAll(), _countryRepository.GetAll());
+
+        _scoreController.ScoreFinalPredictions(
+            _participantRepository.GetAll(), _countryRepository.GetAll());
+
         var rankedParticipants = _participantRanker.GetRankedParticipants();
         foreach (var participant in rankedParticipants)
         {
-            _consoleClient.ShowMessage($"{participant.Name} - {participant.TotalPoints} points");
+            _consoleClient.ShowMessage($"{participant.Name} - {participant.TotalPoints} points " +
+                $"{participant.SemiFinal1Points}-{participant.SemiFinal2Points}-{participant.FinalPoints}");
         }
         return true;
     }

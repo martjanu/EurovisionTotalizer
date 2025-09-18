@@ -5,10 +5,8 @@ namespace EurovisionTotalizer.Domain.Calculators
 {
     public interface IScoreController
     {
-        int GetFinalPoints(Participant participant, IEnumerable<FinalPrediction> predictions);
-        int GetSemiFinalPoints(SemiFinal semiFinal, Participant participant, IEnumerable<SemifinalPrediction> predictions);
         void ResetAllPoints(IEnumerable<Participant> participants);
-        void ScoreFinalPredictions(IEnumerable<FinalPrediction> predictions);
-        void ScoreSemifinalPredictions(IEnumerable<SemifinalPrediction> predictions, SemiFinal semiFinal);
+        void ScoreFinalPredictions(IEnumerable<Participant> participants, IEnumerable<Country> countries);
+        void ScoreSemifinalPredictions(IEnumerable<Participant> participants, IEnumerable<Country> countries);
     }
 }
