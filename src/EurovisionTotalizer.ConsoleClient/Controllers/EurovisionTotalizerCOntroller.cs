@@ -95,7 +95,7 @@ public class EurovisionTotalizerCOntroller
             var countries = _countryRepository.GetAll();
             foreach (var country in countries)
             {
-                _consoleClient.ShowMessage($"{country.Name} - In Final: {country.IsInFinal} - SemiFinal: {country.SemiFinal}");
+                _consoleClient.ShowMessage($"{country.Name} - In Final: {country.IsInFinal} - SemiFinal: {country.SemiFinal} {country.PlaceInFinal}");
             }
         }
         else if (input == "2")

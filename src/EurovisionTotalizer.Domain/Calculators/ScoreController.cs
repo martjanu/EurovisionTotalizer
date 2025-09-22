@@ -15,7 +15,7 @@ public class ScoreController : IScoreController
             {
                 if (prediction.Type == PredictionType.DoesNotReachFinal
                     && !prediction.Country!.IsInFinal
-                    && countryNames.Contains(prediction.Country.Name)) // čia patikrinimas
+                    && countryNames.Contains(prediction.Country.Name))  
                 {
                     prediction.Points = 1;
                 }
@@ -47,8 +47,6 @@ public class ScoreController : IScoreController
 
     private void ScoreTop10Predictions(FinalPrediction prediction, Country country)
     {
-        if (prediction.Country != country) return;
-
         if (prediction.PlaceInFinal == country.PlaceInFinal)
         {
             prediction.Points = 2;
