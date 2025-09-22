@@ -168,15 +168,18 @@ public class EurovisionTotalizerCOntroller
 
     private bool ShowRankings()
     {
-        _scoreController.ResetAllPoints(_participantRepository.GetAll());
+        var participants = _participantRepository.GetAll();
+        participants = _scoreController.ResetAllPoints(participants);
 
-        _scoreController.ScoreSemifinalPredictions(
-            _participantRepository.GetAll(), _countryRepository.GetAll());
+        participants = _scoreController.ScoreSemifinalPredictions(
+                participants, _countryRepository.GetAll());
 
         _scoreController.ScoreFinalPredictions(
-            _participantRepository.GetAll(), _countryRepository.GetAll());
+            participants, _countryRepository.GetAll());
 
-        var rankedParticipants = _participantRanker.GetRankedParticipants();
+        participants = _scoreController.CalculateTotalPoints(participants);
+
+        var rankedParticipants = _participantRanker.GetRankedParticipants(participants);
         foreach (var participant in rankedParticipants)
         {
             _consoleClient.ShowMessage($"{participant.Name} - {participant.TotalPoints} points " +

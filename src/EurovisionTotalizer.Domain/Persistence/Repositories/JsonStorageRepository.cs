@@ -11,8 +11,8 @@ public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : clas
 
     public JsonStorageRepository(string filePath, IJsonSerializer serializer)
     {
-        _filePath = filePath;
-        _serializer = serializer;
+        _filePath = filePath ?? throw new ArgumentNullException(nameof(filePath));
+        _serializer = serializer ?? throw new ArgumentNullException(nameof(serializer));
 
         if (!File.Exists(_filePath))
         {
@@ -46,6 +46,11 @@ public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : clas
 
     public void Update(IHasName item, T newItem)
     {
+        if (item == null)
+            throw new ArgumentNullException(nameof(item));
+        if (newItem == null)
+            throw new ArgumentNullException(nameof(newItem));
+
         var items = LoadData();
         var index = items.FindIndex(x => (x as IHasName).Name == item.Name);
         if (index >= 0)
@@ -57,6 +62,9 @@ public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : clas
 
     public void Delete(IHasName item)
     {
+        if (item == null)
+            throw new ArgumentNullException(nameof(item));
+
         var items = LoadData();
         items.RemoveAll(x =>
             (x as dynamic).Name == item.Name

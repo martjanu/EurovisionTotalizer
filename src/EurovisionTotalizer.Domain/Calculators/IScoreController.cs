@@ -1,12 +1,12 @@
-﻿using EurovisionTotalizer.Domain.Enums;
-using EurovisionTotalizer.Domain.Models;
+﻿using EurovisionTotalizer.Domain.Models;
 
 namespace EurovisionTotalizer.Domain.Calculators
 {
     public interface IScoreController
     {
-        void ResetAllPoints(IEnumerable<Participant> participants);
-        void ScoreFinalPredictions(IEnumerable<Participant> participants, IEnumerable<Country> countries);
-        void ScoreSemifinalPredictions(IEnumerable<Participant> participants, IEnumerable<Country> countries);
+        IEnumerable<Participant> CalculateTotalPoints(IEnumerable<Participant> participants);
+        IEnumerable<Participant> ResetAllPoints(IEnumerable<Participant> participants);
+        IEnumerable<Participant> ScoreFinalPredictions(IEnumerable<Participant> participants, IEnumerable<Country> countries);
+        IEnumerable<Participant> ScoreSemifinalPredictions(IEnumerable<Participant> participants, IEnumerable<Country> countries);
     }
 }

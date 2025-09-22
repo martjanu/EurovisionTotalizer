@@ -9,13 +9,12 @@ public class ParticipantRanker : IParticipantRanker
 
     public ParticipantRanker(IJsonStorageRepository<Participant> participantRepository)
     {
-        _participantRepository = participantRepository;
+        _participantRepository = participantRepository ?? throw new ArgumentNullException(nameof(participantRepository));
     }
 
-    public IEnumerable<Participant> GetRankedParticipants()
+    public IEnumerable<Participant> GetRankedParticipants(IEnumerable<Participant> participants)
     {
-        var _participants = _participantRepository.GetAll();
-        return _participants
+        return participants
             .OrderByDescending(p => p.TotalPoints)
             .ThenByDescending(p => p.FinalPoints)
             .ThenByDescending(p => p.SemiFinal1Points + p.SemiFinal2Points)
