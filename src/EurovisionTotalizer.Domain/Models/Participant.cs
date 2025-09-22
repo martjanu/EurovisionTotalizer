@@ -7,6 +7,6 @@ public class Participant : IHasName
     public int FinalPoints { get; set; } = 0;
     public int SemiFinal1Points { get; set; } = 0;
     public int SemiFinal2Points { get; set; } = 0;
-    public IEnumerable<SemifinalPrediction>? SemifinalPredictions { get; set; }
-    public IEnumerable<FinalPrediction>? FinalPredictions { get; set; }
+    public IEnumerable<SemifinalPrediction> SemifinalPredictions { get; set; } = Enumerable.Empty<SemifinalPrediction>();
+    public IEnumerable<FinalPrediction> FinalPredictions { get; set; } = Enumerable.Empty<FinalPrediction>();
 }
