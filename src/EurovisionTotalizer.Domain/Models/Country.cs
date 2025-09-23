@@ -7,5 +7,5 @@ public class Country : IHasName
     public string Name { get; set; } = "Missing Name";
     public bool IsInFinal { get; set; } = false;
     public SemiFinal SemiFinal { get; set; }
-    public int PlaceInFinal { get; set; } = 0;
+    public int PlaceInFinal { get; set; } = -1;
 }

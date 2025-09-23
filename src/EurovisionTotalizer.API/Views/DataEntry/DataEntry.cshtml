@@ -35,19 +35,51 @@
         <!-- Update -->
         <div id="update">
             <h2>Update</h2>
-            <p>Pasirink dalyvį arba šalį:</p>
-            <select>
-                @foreach (var p in Model.Participants)
-                {
-                    <option>@p.Name </option>
-                }
+            <p>Pasirink šalį:</p>
+            <select id="entity-select">
+                <option value="">-- Pasirink --</option>
                 @foreach (var c in Model.Countries)
                 {
-                    <option>@c.Name</option>
+                    <option data-type="country" value="country-@c.Name">@c.Name</option>
                 }
             </select>
-            <button>Update</button>
+
+            <form id="update-form" asp-controller="DataEntry" asp-action="Update" method="post" style="display:none;">
+                <input type="hidden" id="entity-type" name="Type" />
+
+                <div id="country-fields" style="display:none; margin-top: 15px;">
+                    <label>
+                        Name:
+                        <input type="text" name="Name" id="country-name" />
+                    </label>
+                    <br />
+
+                    <label>
+                        Is In Final:
+                        <input type="checkbox" name="IsInFinal" id="country-infinal" />
+                    </label>
+                    <br />
+
+                    <label>
+                        SemiFinal:
+                        <select name="SemiFinal" id="country-semifinal">
+                            <option value="0">None</option>
+                            <option value="1">First</option>
+                            <option value="2">Second</option>
+                        </select>
+                    </label>
+                    <br />
+
+                    <label>
+                        Place in Final:
+                        <input type="number" name="PlaceInFinal" id="country-place" />
+                    </label>
+                </div>
+
+                <button type="submit">Update</button>
+            </form>
         </div>
+
 
         <!-- Delete -->
         <div id="delete">
@@ -78,7 +110,11 @@
                     <option value="country">Šalis</option>
                 </select>
                 <input type="text" id="create-name" name="Name" placeholder="Įvesk vardą" required />
-                <input type="text" id="create-additional" name="Additional" placeholder="Pusfinalis (tik šalims)" />
+                <select id="create-additional" name="Additional">
+                    <option value="0">none</option>
+                    <option value="1">first</option>
+                    <option value="2">second</option>
+                </select>
                 <button type="submit">Create</button>
             </form>
         </div>
@@ -101,3 +137,36 @@
     toggleAdditionalField();
     createType.addEventListener('change', toggleAdditionalField);
 </script>
+
+<script>
+    document.getElementById("entity-select").addEventListener("change", function () {
+        const selectedName = this.value;
+        const type = this.options[this.selectedIndex].dataset.type;
+
+        if (!selectedName) {
+            document.getElementById("update-form").style.display = "none";
+            return;
+        }
+
+        document.getElementById("entity-type").value = type;
+        document.getElementById("entity-name").value = selectedName;
+
+        if (type === "country") {
+            document.getElementById("country-fields").style.display = "block";
+            document.getElementById("update-form").style.display = "block";
+
+            fetch(`/DataEntry/GetCountryByName/${selectedName}`)
+                .then(r => r.json())
+                .then(data => {
+                    document.getElementById("country-name").value = data.name;
+                    document.getElementById("country-infinal").checked = data.isInFinal;
+                    document.getElementById("country-semifinal").value = data.semiFinal;
+                    document.getElementById("country-place").value = data.placeInFinal ?? "";
+                });
+        } else {
+            document.getElementById("country-fields").style.display = "none";
+        }
+    });
+</script>
+
+

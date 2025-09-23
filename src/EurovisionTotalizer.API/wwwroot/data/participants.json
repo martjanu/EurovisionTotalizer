@@ -8,69 +8,262 @@
     "SemifinalPredictions": [
       {
         "Type": 0,
-        "Country": { "Name": "Sweden", "IsInFinal": true, "SemiFinal": 1, "PlaceInFinal": 5 },
+        "Country": {
+          "Name": "Sweden",
+          "IsInFinal": true,
+          "SemiFinal": 1,
+          "PlaceInFinal": 5
+        },
         "Points": 0
       },
       {
         "Type": 0,
-        "Country": { "Name": "Norway", "IsInFinal": true, "SemiFinal": 1, "PlaceInFinal": 8 },
+        "Country": {
+          "Name": "Norway",
+          "IsInFinal": true,
+          "SemiFinal": 1,
+          "PlaceInFinal": 8
+        },
         "Points": 0
       },
       {
         "Type": 0,
-        "Country": { "Name": "Ireland", "IsInFinal": false, "SemiFinal": 1, "PlaceInFinal": 0 },
+        "Country": {
+          "Name": "Ireland",
+          "IsInFinal": false,
+          "SemiFinal": 1,
+          "PlaceInFinal": 0
+        },
         "Points": 0
       },
       {
         "Type": 0,
-        "Country": { "Name": "Finland", "IsInFinal": true, "SemiFinal": 1, "PlaceInFinal": 12 },
+        "Country": {
+          "Name": "Finland",
+          "IsInFinal": true,
+          "SemiFinal": 1,
+          "PlaceInFinal": 12
+        },
         "Points": 0
       },
       {
         "Type": 0,
-        "Country": { "Name": "Latvia", "IsInFinal": false, "SemiFinal": 1, "PlaceInFinal": 0 },
+        "Country": {
+          "Name": "Latvia",
+          "IsInFinal": false,
+          "SemiFinal": 1,
+          "PlaceInFinal": 0
+        },
         "Points": 0
       },
       {
         "Type": 0,
-        "Country": { "Name": "Italy", "IsInFinal": true, "SemiFinal": 2, "PlaceInFinal": 4 },
+        "Country": {
+          "Name": "Italy",
+          "IsInFinal": true,
+          "SemiFinal": 2,
+          "PlaceInFinal": 4
+        },
         "Points": 0
       },
       {
         "Type": 0,
-        "Country": { "Name": "Greece", "IsInFinal": true, "SemiFinal": 2, "PlaceInFinal": 9 },
+        "Country": {
+          "Name": "Greece",
+          "IsInFinal": true,
+          "SemiFinal": 2,
+          "PlaceInFinal": 9
+        },
         "Points": 0
       },
       {
         "Type": 0,
-        "Country": { "Name": "Poland", "IsInFinal": false, "SemiFinal": 2, "PlaceInFinal": 0 },
+        "Country": {
+          "Name": "Poland",
+          "IsInFinal": false,
+          "SemiFinal": 2,
+          "PlaceInFinal": 0
+        },
         "Points": 0
       },
       {
         "Type": 0,
-        "Country": { "Name": "Austria", "IsInFinal": true, "SemiFinal": 2, "PlaceInFinal": 15 },
+        "Country": {
+          "Name": "Austria",
+          "IsInFinal": true,
+          "SemiFinal": 2,
+          "PlaceInFinal": 15
+        },
         "Points": 0
       },
       {
         "Type": 0,
-        "Country": { "Name": "Denmark", "IsInFinal": false, "SemiFinal": 2, "PlaceInFinal": 0 },
+        "Country": {
+          "Name": "Denmark",
+          "IsInFinal": false,
+          "SemiFinal": 2,
+          "PlaceInFinal": 0
+        },
         "Points": 0
       }
     ],
     "FinalPredictions": [
-      { "Type": 2, "Country": { "Name": "Sweden" }, "PlaceInFinal": 4, "IsBottom3": false, "Points": 0 },
-      { "Type": 2, "Country": { "Name": "Italy" }, "PlaceInFinal": 2, "IsBottom3": false, "Points": 0 },
-      { "Type": 2, "Country": { "Name": "Finland" }, "PlaceInFinal": 3, "IsBottom3": false, "Points": 0 },
-      { "Type": 2, "Country": { "Name": "Norway" }, "PlaceInFinal": 4, "IsBottom3": false, "Points": 0 },
-      { "Type": 2, "Country": { "Name": "Greece" }, "PlaceInFinal": 5, "IsBottom3": false, "Points": 0 },
-      { "Type": 2, "Country": { "Name": "Austria" }, "PlaceInFinal": 1, "IsBottom3": false, "Points": 0 },
-      { "Type": 2, "Country": { "Name": "France" }, "PlaceInFinal": 7, "IsBottom3": false, "Points": 0 },
-      { "Type": 2, "Country": { "Name": "Germany" }, "PlaceInFinal": 8, "IsBottom3": false, "Points": 0 },
-      { "Type": 2, "Country": { "Name": "Spain" }, "PlaceInFinal": 9, "IsBottom3": false, "Points": 0 },
-      { "Type": 2, "Country": { "Name": "United Kingdom" }, "PlaceInFinal": 10, "IsBottom3": false, "Points": 0 },
-      { "Type": 1, "Country": { "Name": "Ireland" }, "PlaceInFinal": 24, "IsBottom3": true, "Points": 0 },
-      { "Type": 1, "Country": { "Name": "Latvia" }, "PlaceInFinal": 25, "IsBottom3": true, "Points": 0 },
-      { "Type": 1, "Country": { "Name": "Denmark" }, "PlaceInFinal": 26, "IsBottom3": true, "Points": 0 }
+      {
+        "Type": 2,
+        "Country": {
+          "Name": "Sweden",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 4,
+        "IsBottom3": false,
+        "Points": 0
+      },
+      {
+        "Type": 2,
+        "Country": {
+          "Name": "Italy",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 2,
+        "IsBottom3": false,
+        "Points": 0
+      },
+      {
+        "Type": 2,
+        "Country": {
+          "Name": "Finland",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 3,
+        "IsBottom3": false,
+        "Points": 0
+      },
+      {
+        "Type": 2,
+        "Country": {
+          "Name": "Norway",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 4,
+        "IsBottom3": false,
+        "Points": 0
+      },
+      {
+        "Type": 2,
+        "Country": {
+          "Name": "Greece",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 5,
+        "IsBottom3": false,
+        "Points": 0
+      },
+      {
+        "Type": 2,
+        "Country": {
+          "Name": "Austria",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 1,
+        "IsBottom3": false,
+        "Points": 0
+      },
+      {
+        "Type": 2,
+        "Country": {
+          "Name": "France",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 7,
+        "IsBottom3": false,
+        "Points": 0
+      },
+      {
+        "Type": 2,
+        "Country": {
+          "Name": "Germany",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 8,
+        "IsBottom3": false,
+        "Points": 0
+      },
+      {
+        "Type": 2,
+        "Country": {
+          "Name": "Spain",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 9,
+        "IsBottom3": false,
+        "Points": 0
+      },
+      {
+        "Type": 2,
+        "Country": {
+          "Name": "United Kingdom",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 10,
+        "IsBottom3": false,
+        "Points": 0
+      },
+      {
+        "Type": 1,
+        "Country": {
+          "Name": "Ireland",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 24,
+        "IsBottom3": true,
+        "Points": 0
+      },
+      {
+        "Type": 1,
+        "Country": {
+          "Name": "Latvia",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 25,
+        "IsBottom3": true,
+        "Points": 0
+      },
+      {
+        "Type": 1,
+        "Country": {
+          "Name": "Denmark",
+          "IsInFinal": false,
+          "SemiFinal": 0,
+          "PlaceInFinal": 0
+        },
+        "PlaceInFinal": 26,
+        "IsBottom3": true,
+        "Points": 0
+      }
     ]
   }
 ]

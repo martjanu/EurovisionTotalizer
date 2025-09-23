@@ -1,10 +1,9 @@
-﻿using System.Xml.Linq;
-using EurovisionTotalizer.Domain.Models;
+﻿using EurovisionTotalizer.Domain.Models;
 using EurovisionTotalizer.Domain.Persistence.Serializera;
 
 namespace EurovisionTotalizer.Domain.Persistence.Repositories;
 
-public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : class
+public class JsonStorageRepository<IHasName> : IJsonStorageRepository<IHasName>
 {
     private readonly string _filePath;
     private readonly IJsonSerializer _serializer;
@@ -16,35 +15,35 @@ public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : clas
 
         if (!File.Exists(_filePath))
         {
-            SaveData(new List<T>());  
+            SaveData(new List<IHasName>());
         }
     }
 
-    private List<T> LoadData()
+    private List<IHasName> LoadData()
     {
         var json = File.ReadAllText(_filePath);
-        return _serializer.Deserialize<List<T>>(json) ?? new List<T>();
+        return _serializer.Deserialize<List<IHasName>>(json) ?? new List<IHasName>();
     }
 
-    private void SaveData(List<T> items)
+    private void SaveData(List<IHasName> items)
     {
         var json = _serializer.Serialize(items);
         File.WriteAllText(_filePath, json);
     }
 
-    public void Add(T item)
+    public void Add(IHasName item)
     {
         var items = LoadData();
         items.Add(item);
         SaveData(items);
     }
 
-    public IEnumerable<T> GetAll()
+    public IEnumerable<IHasName> GetAll()
     {
         return LoadData();
     }
 
-    public void Update(IHasName item, T newItem)
+    public void Update(IHasName item, IHasName newItem)
     {
         if (item == null)
             throw new ArgumentNullException(nameof(item));
@@ -52,7 +51,7 @@ public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : clas
             throw new ArgumentNullException(nameof(newItem));
 
         var items = LoadData();
-        var index = items.FindIndex(x => (x as IHasName).Name == item.Name);
+        var index = items.FindIndex(x => (x as dynamic).Name == (item as dynamic).Name);
         if (index >= 0)
         {
             items[index] = newItem;
@@ -67,14 +66,20 @@ public class JsonStorageRepository<T> : IJsonStorageRepository<T> where T : clas
 
         var items = LoadData();
         items.RemoveAll(x =>
-            (x as dynamic).Name == item.Name
+            (x as dynamic).Name == (item as dynamic).Name
         );
         SaveData(items);
     }
 
-    public bool Exists(Func<T, bool> predicate)
+    public bool Exists(Func<IHasName, bool> predicate)
     {
         var items = LoadData();
         return items.Any(predicate);
+    }
+
+    public IHasName? GetByName(string name)
+    {
+        var items = LoadData();
+        return items.FirstOrDefault(x => (x as dynamic).Nme == name);
     }
 }

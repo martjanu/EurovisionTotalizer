@@ -2,6 +2,7 @@
 using EurovisionTotalizer.Domain.Persistence.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using EurovisionTotalizer.API.ViewModels;
+using EurovisionTotalizer.Domain.Enums;
 
 public class DataEntryController : Controller
 {
@@ -56,5 +57,63 @@ public class DataEntryController : Controller
         }
 
         return RedirectToAction("DataEntry");
+    }
+
+    // POST: /DataEntry/Create
+    [HttpPost]
+    public IActionResult Create(string Type, string Name, SemiFinal Additional)
+    {
+        if (string.IsNullOrEmpty(Type)) return RedirectToAction("DataEntry");
+
+        if (Type == "participant")
+        {
+           _participantRepo.Add(new Participant { Name = Name });
+        }
+        else if (Type == "country")
+        {
+            _countryRepo.Add(new Country { Name = Name, SemiFinal = Additional});
+        }
+
+        return RedirectToAction("DataEntry");
+    }
+
+    // GET: /DataEntry/GetCountry/Name
+    [HttpGet]
+    public IActionResult GetCountry(string Name)
+    {
+        var country = _countryRepo.GetByName(Name);
+        if (country == null) return NotFound();
+
+        return Json(new
+        {
+            name = country.Name,
+            isInFinal = country.IsInFinal,
+            semiFinal = (int)country.SemiFinal,
+            placeInFinal = country.PlaceInFinal
+        });
+    }
+
+    // POST: /DataEntry/Update
+    [HttpPost]
+    public IActionResult Update(string Type, string Name, bool IsInFinal, SemiFinal SemiFinal, int PlaceInFinal)
+    {
+        if (Type == "country")
+        {
+            var oldCountry = _countryRepo.GetByName(Name);
+
+            if (oldCountry == null) return NotFound();
+
+            var newCountry = new Country
+            {
+                Name = Name,
+                IsInFinal = IsInFinal,
+                SemiFinal = SemiFinal,
+                PlaceInFinal = PlaceInFinal
+            };
+
+            _countryRepo.Update(oldCountry, newCountry);
+        }
+
+        return RedirectToAction("Index");
     }
 }

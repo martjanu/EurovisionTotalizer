@@ -208,5 +208,11 @@
     "IsInFinal": false,
     "SemiFinal": 1,
     "PlaceInFinal": -1
+  },
+  {
+    "Name": "Israel",
+    "IsInFinal": false,
+    "SemiFinal": 1,
+    "PlaceInFinal": 0
   }
 ]
