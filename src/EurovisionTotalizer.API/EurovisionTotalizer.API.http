@@ -1,0 +1,6 @@
+@EurovisionTotalizer.API_HostAddress = http://localhost:5287
+
+GET {{EurovisionTotalizer.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

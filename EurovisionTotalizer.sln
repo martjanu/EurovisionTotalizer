@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EurovisionTotalizer.Domain"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RutovisionTotalizer.Domain.Tests", "tests\RutovisionTotalizer.Domain.Tests\RutovisionTotalizer.Domain.Tests.csproj", "{FC62C013-219D-4816-9177-F82AB6DFA3E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EurovisionTotalizer.API", "src\EurovisionTotalizer.API\EurovisionTotalizer.API.csproj", "{FD9013DA-118A-44A1-86C7-12989118E9EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{FC62C013-219D-4816-9177-F82AB6DFA3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC62C013-219D-4816-9177-F82AB6DFA3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC62C013-219D-4816-9177-F82AB6DFA3E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD9013DA-118A-44A1-86C7-12989118E9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9013DA-118A-44A1-86C7-12989118E9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9013DA-118A-44A1-86C7-12989118E9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9013DA-118A-44A1-86C7-12989118E9EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{3ACAD6AD-92B4-4AFB-83A7-62D421656967} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{749AFD6A-A517-4C8E-8DB2-C911F751DDD6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{FC62C013-219D-4816-9177-F82AB6DFA3E6} = {94A51CDC-EE1A-4FBB-B974-1CD4A6CE8AA0}
+		{FD9013DA-118A-44A1-86C7-12989118E9EE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CE2082C2-435A-4C21-B07D-E991EA9C584D}
