@@ -1,0 +1,77 @@
+﻿/* DataEntry page CSS */
+.dataentry-shell {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+
+.dataentry-menu {
+    width: 200px;
+    background: #0f1724;
+    color: #f1f5f9;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+
+    .dataentry-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+
+    .dataentry-menu li {
+        margin-bottom: 0.5rem;
+    }
+
+
+.menu-link {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+    .menu-link:hover {
+        color: #60a5fa;
+    }
+
+
+.dataentry-content {
+    flex: 1;
+    background: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+
+    .dataentry-content h2 {
+        margin-top: 0;
+        color: #0b1220;
+    }
+
+
+    .dataentry-content select, .dataentry-content input {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+
+    .dataentry-content button {
+        background: #60a5fa;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+
+        .dataentry-content button:hover {
+            background: #3b82f6;
+        }

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar" role="navigation">
+            <div class="sidebar-brand">Eurovizija</div>
+            <nav class="sidebar-nav">
+                <a asp-controller="Home" asp-action="DataEntry" class="nav-link">Duomenų įvedimas</a>
+                <a asp-controller="Home" asp-action="Predictions" class="nav-link">Spėjimų lentelės</a>
+                <a asp-controller="Home" asp-action="Leaderboard" class="nav-link">Leaderboradas</a>
+            </nav>
+        </aside>
+
+        <main class="content" role="main">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>
