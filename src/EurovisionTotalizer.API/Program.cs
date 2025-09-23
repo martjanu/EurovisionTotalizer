@@ -1,4 +1,4 @@
-using EurovisionTotalizer.Domain.Models;
+﻿using EurovisionTotalizer.Domain.Models;
 using EurovisionTotalizer.Domain.Persistence.Factories;
 using EurovisionTotalizer.Domain.Persistence.Repositories;
 using EurovisionTotalizer.Domain.Persistence.Serializera;
@@ -33,3 +33,32 @@ builder.Services.AddScoped<IJsonStorageRepository<Country>>(sp =>
     var serializer = sp.GetRequiredService<IJsonSerializer>();
     return repoFactory.Create<Country>("wwwroot/data/countries.json", serializer);
 });
+
+var app = builder.Build();
+
+// ----------------- Klaidų puslapio konfigūracija -----------------
+
+if (app.Environment.IsDevelopment())
+{
+    // Dev režime rodo pilną exception
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    // Production – rodo Error page
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+// Reikalingi pipeline middleware
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.UseAuthorization();
+
+// Default MVC route
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();

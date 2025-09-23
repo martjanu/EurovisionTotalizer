@@ -1,0 +1,103 @@
+﻿@model EurovisionTotalizer.API.ViewModels.DataEntryViewModel
+@{
+    ViewBag.Title = "Duomenų įvedimas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/dataentry.css" />
+
+<div class="dataentry-shell">
+    <aside class="dataentry-menu">
+        <ul>
+            <li><a href="#read" class="menu-link">Read Data</a></li>
+            <li><a href="#update" class="menu-link">Update</a></li>
+            <li><a href="#delete" class="menu-link">Delete</a></li>
+            <li><a href="#create" class="menu-link">Create Data</a></li>
+        </ul>
+    </aside>
+
+    <section class="dataentry-content">
+        <!-- Read Data -->
+        <div id="read">
+            <h2>Read Data</h2>
+            <p>Visos šalys ir dalyviai:</p>
+            <ul>
+                @foreach (var p in Model.Participants)
+                {
+                    <li>Dalyvis: @p.Name </li>
+                }
+                @foreach (var c in Model.Countries)
+                {
+                    <li>Šalis: @c.Name - @c.SemiFinal</li>
+                }
+            </ul>
+        </div>
+
+        <!-- Update -->
+        <div id="update">
+            <h2>Update</h2>
+            <p>Pasirink dalyvį arba šalį:</p>
+            <select>
+                @foreach (var p in Model.Participants)
+                {
+                    <option>@p.Name </option>
+                }
+                @foreach (var c in Model.Countries)
+                {
+                    <option>@c.Name</option>
+                }
+            </select>
+            <button>Update</button>
+        </div>
+
+        <!-- Delete -->
+        <div id="delete">
+            <h2>Delete</h2>
+            <form asp-controller="DataEntry" asp-action="Delete" method="post">
+                <p>Pasirink šalį ar dalyvį:</p>
+                <select name="name">
+                    @foreach (var p in Model.Participants)
+                    {
+                        <option value="participant:@p.Name">@p.Name (Dalyvis)</option>
+                    }
+                    @foreach (var c in Model.Countries)
+                    {
+                        <option value="country:@c.Name">@c.Name (Šalis)</option>
+                    }
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Create -->
+        <div id="create">
+            <h2>Create Data</h2>
+            <form asp-controller="DataEntry" asp-action="Create" method="post">
+                <p>Pasirink ką kurti:</p>
+                <select id="create-type" name="Type">
+                    <option value="participant">Dalyvis</option>
+                    <option value="country">Šalis</option>
+                </select>
+                <input type="text" id="create-name" name="Name" placeholder="Įvesk vardą" required />
+                <input type="text" id="create-additional" name="Additional" placeholder="Pusfinalis (tik šalims)" />
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<script>
+    const createType = document.getElementById('create-type');
+    const additionalField = document.getElementById('create-additional');
+
+    function toggleAdditionalField() {
+        if (createType.value === 'country') {
+            additionalField.style.display = 'block';
+        } else {
+            additionalField.style.display = 'none';
+            additionalField.value = '';
+        }
+    }
+
+    toggleAdditionalField();
+    createType.addEventListener('change', toggleAdditionalField);
+</script>
