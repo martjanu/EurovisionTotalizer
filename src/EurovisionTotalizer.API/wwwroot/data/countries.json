@@ -1,9 +1,9 @@
 [
   {
     "Name": "Sweden",
-    "IsInFinal": true,
-    "SemiFinal": 0,
-    "PlaceInFinal": 4
+    "IsInFinal": false,
+    "SemiFinal": 1,
+    "PlaceInFinal": 3
   },
   {
     "Name": "Italy",

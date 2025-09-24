@@ -80,6 +80,6 @@ public class JsonStorageRepository<IHasName> : IJsonStorageRepository<IHasName>
     public IHasName? GetByName(string name)
     {
         var items = LoadData();
-        return items.FirstOrDefault(x => (x as dynamic).Nme == name);
+        return items.FirstOrDefault(x => (x as dynamic).Name == name);
     }
 }

@@ -114,6 +114,6 @@ public class DataEntryController : Controller
             _countryRepo.Update(oldCountry, newCountry);
         }
 
-        return RedirectToAction("Index");
+        return RedirectToAction("DataEntry");
     }
 }

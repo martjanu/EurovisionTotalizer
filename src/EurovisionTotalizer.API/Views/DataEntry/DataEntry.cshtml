@@ -40,7 +40,7 @@
                 <option value="">-- Pasirink --</option>
                 @foreach (var c in Model.Countries)
                 {
-                    <option data-type="country" value="country-@c.Name">@c.Name</option>
+                    <option data-type="country" value="@c.Name">@c.Name</option>
                 }
             </select>
 
@@ -50,7 +50,7 @@
                 <div id="country-fields" style="display:none; margin-top: 15px;">
                     <label>
                         Name:
-                        <input type="text" name="Name" id="country-name" />
+                        <input type="text" name="Name" id="country-name" readonly  />
                     </label>
                     <br />
 
@@ -121,52 +121,7 @@
     </section>
 </div>
 
-<script>
-    const createType = document.getElementById('create-type');
-    const additionalField = document.getElementById('create-additional');
-
-    function toggleAdditionalField() {
-        if (createType.value === 'country') {
-            additionalField.style.display = 'block';
-        } else {
-            additionalField.style.display = 'none';
-            additionalField.value = '';
-        }
-    }
-
-    toggleAdditionalField();
-    createType.addEventListener('change', toggleAdditionalField);
-</script>
-
-<script>
-    document.getElementById("entity-select").addEventListener("change", function () {
-        const selectedName = this.value;
-        const type = this.options[this.selectedIndex].dataset.type;
-
-        if (!selectedName) {
-            document.getElementById("update-form").style.display = "none";
-            return;
-        }
-
-        document.getElementById("entity-type").value = type;
-        document.getElementById("entity-name").value = selectedName;
-
-        if (type === "country") {
-            document.getElementById("country-fields").style.display = "block";
-            document.getElementById("update-form").style.display = "block";
-
-            fetch(`/DataEntry/GetCountryByName/${selectedName}`)
-                .then(r => r.json())
-                .then(data => {
-                    document.getElementById("country-name").value = data.name;
-                    document.getElementById("country-infinal").checked = data.isInFinal;
-                    document.getElementById("country-semifinal").value = data.semiFinal;
-                    document.getElementById("country-place").value = data.placeInFinal ?? "";
-                });
-        } else {
-            document.getElementById("country-fields").style.display = "none";
-        }
-    });
-</script>
+<script src="~/js/dataentry-create.js"></script>
+<script src="~/js/dataentry-update.js"></script>
 
 
