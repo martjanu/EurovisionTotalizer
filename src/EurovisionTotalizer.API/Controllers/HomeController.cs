@@ -7,11 +7,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Predictions()
-    {
-        return View();
-    }
-
     public IActionResult Leaderboard()
     {
         return View();

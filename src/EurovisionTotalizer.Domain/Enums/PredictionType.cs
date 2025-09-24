@@ -2,6 +2,7 @@
 
 public enum PredictionType
 {
+    None,
     DoesNotReachFinal,
     Last3InFinal,
     ExactPlaceInFinal

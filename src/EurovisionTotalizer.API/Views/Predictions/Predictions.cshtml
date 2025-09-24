@@ -1,0 +1,175 @@
+﻿@using EurovisionTotalizer.API.Views
+@using EurovisionTotalizer.Domain.Enums
+@model EurovisionTotalizer.API.ViewModels.DataEntryViewModel
+
+@{
+    ViewBag.Title = "Spėjimų lentelės";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Spėjimų lentelės</h1>
+<p>Čia bus spėjimų lentelės ir rezultatai.</p>
+
+<form asp-action="UpdatePredictions" method="post">
+    <!-- Dalyvio pasirinkimas -->
+    <label for="participant">Pasirinkite dalyvį:</label>
+    <select id="participant" name="ParticipantName">
+        @foreach (var p in Model.Participants)
+        {
+            <option value="@p.Name">@p.Name</option>
+        }
+    </select>
+
+    <br /><br />
+
+    <!-- Lentelės pasirinkimo dropdown -->
+    <label for="tableSelector">Pasirinkite lentelę:</label>
+    <select id="tableSelector">
+        <option value="all">Visos lentelės</option>
+        <option value="semi1">1 pusfinalis</option>
+        <option value="semi2">2 pusfinalis</option>
+        <option value="final">Finalas</option>
+    </select>
+
+    <div style="display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
+        <!-- 1 pusfinalio lentelė -->
+        <table id="table-semi1" border="1" style="border-collapse: collapse; width: 30%;">
+            <thead>
+                <tr><th colspan="2">1 pusfinalis</th></tr>
+                <tr><th>Šalis</th><th>Spėjimas</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.Countries.Where(c => c.SemiFinal == SemiFinal.First))
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        <td>
+                            <select name="SemiPredictions[@c.Name]">
+                                <option value="none">none</option>
+                                <option value="DoesNotReachFinal">Does Not Reach Final</option>
+                            </select>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- 2 pusfinalio lentelė -->
+        <table id="table-semi2" border="1" style="border-collapse: collapse; width: 30%;">
+            <thead>
+                <tr><th colspan="2">2 pusfinalis</th></tr>
+                <tr><th>Šalis</th><th>Spėjimas</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.Countries.Where(c => c.SemiFinal == SemiFinal.Second))
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        <td>
+                            <select name="SemiPredictions[@c.Name]">
+                                <option value="none">none</option>
+                                <option value="DoesNotReachFinal">Does Not Reach Final</option>
+                            </select>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Finalo lentelė -->
+        <table id="table-final" border="1" style="border-collapse: collapse; width: 30%;">
+            <thead>
+                <tr><th colspan="2">Finalas</th></tr>
+                <tr><th>Šalis</th><th>Spėjimas</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.Countries.Where(c => c.IsInFinal))
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        <td>
+                            <select name="FinalPredictions[@c.Name]">
+                                <option value="none">none</option>
+                                <option value="Bottom3">Bottom 3</option>
+                                @for (int i = 1; i <= 10; i++)
+                                {
+                                    <option value="@i">@i</option>
+                                }
+                            </select>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Išsaugoti spėjimus</button>
+</form>
+
+<script>
+    function loadPredictions(participantName) {
+        fetch(`/Predictions/GetPredictions?participantName=${encodeURIComponent(participantName)}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success === false) return;
+
+                // Reset visi selectai į "none"
+                document.querySelectorAll("select[name^='SemiPredictions']").forEach(s => s.value = "none");
+                document.querySelectorAll("select[name^='FinalPredictions']").forEach(s => s.value = "none");
+
+                // Užpildyti pusfinalių spėjimus
+                for (const pred of data.semi) {
+                    const selectEl = document.querySelector(`select[name="SemiPredictions[${pred.country}]"]`);
+                    if (selectEl) selectEl.value = pred.type;
+                }
+
+                // Užpildyti finalo spėjimus
+                for (const pred of data.final) {
+                    const selectEl = document.querySelector(`select[name="FinalPredictions[${pred.country}]"]`);
+                    if (selectEl) {
+                        if (pred.type === "ExactPlaceInFinal" && pred.placeInFinal > 0) {
+                            selectEl.value = pred.placeInFinal;
+                        } else if (pred.type === "Last3InFinal") {
+                            selectEl.value = "Bottom3";
+                        } else {
+                            selectEl.value = "none";
+                        }
+                    }
+                }
+            })
+            .catch(err => console.error("Klaida užkraunant spėjimus:", err));
+    }
+
+    function updateTableVisibility() {
+        const value = document.getElementById("tableSelector").value;
+        const tables = ["table-semi1", "table-semi2", "table-final"];
+
+        tables.forEach(id => {
+            document.getElementById(id).style.display = "none";
+        });
+
+        if (value === "all") {
+            tables.forEach(id => {
+                document.getElementById(id).style.display = "table";
+            });
+        } else {
+            document.getElementById("table-" + value).style.display = "table";
+        }
+    }
+
+    document.getElementById("participant").addEventListener("change", function () {
+        loadPredictions(this.value);
+    });
+
+    document.getElementById("tableSelector").addEventListener("change", updateTableVisibility);
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var participantSelect = document.getElementById("participant");
+        if (participantSelect.value) {
+            loadPredictions(participantSelect.value);
+        }
+        document.getElementById("tableSelector").value = "all";
+        updateTableVisibility();
+    });
+</script>
