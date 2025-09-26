@@ -2,8 +2,7 @@
 
 namespace EurovisionTotalizer.API.ViewModels;
 
-public class DataEntryViewModel
+public class LeaderboardViewModel
 {
     public IEnumerable<Participant> Participants { get; set; } = Enumerable.Empty<Participant>();
-    public IEnumerable<Country> Countries { get; set; } = Enumerable.Empty<Country>();
 }

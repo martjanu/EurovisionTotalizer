@@ -70,11 +70,11 @@ public class ScoreController : IScoreController
     {
         if (country.PlaceInFinal > 10) return;
 
-        if (prediction.PlaceInFinal == country.PlaceInFinal)
+        if (prediction.Place == country.PlaceInFinal)
         {
             prediction.Points = 2;
         }
-        else if (Math.Abs(prediction.PlaceInFinal - country.PlaceInFinal) == 1)
+        else if (Math.Abs(prediction.Place - country.PlaceInFinal) == 1)
         {
             prediction.Points = 1;
         }
@@ -108,20 +108,19 @@ public class ScoreController : IScoreController
         if (!participants.Any()) return participants;
 
         foreach (var participant in participants)
-        {
+        { 
             var semifinalPoints = participant.SemifinalPredictions.Sum(p => p.Points);
+
             var finalPoints = participant.FinalPredictions.Sum(p => p.Points);
 
             participant.TotalPoints = semifinalPoints + finalPoints;
 
             participant.SemiFinal1Points = participant.SemifinalPredictions
-                .Where(p => p.Type == PredictionType.DoesNotReachFinal &&
-                            p.Country?.SemiFinal == SemiFinal.First)
+                .Where(p => p.Country?.SemiFinal == SemiFinal.First)
                 .Sum(p => p.Points);
 
             participant.SemiFinal2Points = participant.SemifinalPredictions
-                .Where(p => p.Type == PredictionType.DoesNotReachFinal &&
-                            p.Country?.SemiFinal == SemiFinal.Second)
+                .Where(p => p.Country?.SemiFinal == SemiFinal.Second)
                 .Sum(p => p.Points);
 
             participant.FinalPoints = finalPoints;
@@ -129,4 +128,5 @@ public class ScoreController : IScoreController
 
         return participants;
     }
+
 }

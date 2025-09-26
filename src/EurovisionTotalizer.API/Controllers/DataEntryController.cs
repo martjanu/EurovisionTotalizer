@@ -13,14 +13,14 @@ public class DataEntryController : Controller
         IJsonStorageRepository<Participant> participantRepo,
         IJsonStorageRepository<Country> countryRepo)
     {
-        _participantRepo = participantRepo;
-        _countryRepo = countryRepo;
+        _participantRepo = participantRepo ?? throw new ArgumentNullException(nameof(participantRepo));
+        _countryRepo = countryRepo ?? throw new ArgumentNullException(nameof(countryRepo));
     }
 
     // GET: /DataEntry
     public IActionResult DataEntry()
     {
-        var model = new DataEntryViewModel
+        var model = new RepositoriesViewModel
         {
             Participants = _participantRepo.GetAll(),
             Countries = _countryRepo.GetAll()

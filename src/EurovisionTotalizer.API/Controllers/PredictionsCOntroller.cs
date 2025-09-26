@@ -15,14 +15,14 @@ public class PredictionsCOntroller : Controller
          IJsonStorageRepository<Participant> participantRepo,
          IJsonStorageRepository<Country> countryRepo)
     {
-        _participantRepo = participantRepo;
-        _countryRepo = countryRepo;
+        _participantRepo = participantRepo ?? throw new ArgumentNullException(nameof(participantRepo));
+        _countryRepo = countryRepo ?? throw new ArgumentNullException(nameof(countryRepo));
     }
 
     // GET: /DataEntry
     public IActionResult Predictions()
     {
-        var model = new DataEntryViewModel
+        var model = new RepositoriesViewModel
         {
             Participants = _participantRepo.GetAll(),
             Countries = _countryRepo.GetAll()
@@ -50,7 +50,7 @@ public class PredictionsCOntroller : Controller
             {
                 Country = _countryRepo.GetByName(kv.Key),
                 Type = kv.Value == "Bottom3" ? PredictionType.Last3InFinal : PredictionType.ExactPlaceInFinal,
-                PlaceInFinal = int.TryParse(kv.Value, out var place) ? place : 0,
+                Place = int.TryParse(kv.Value, out var place) ? place : 0,
                 IsBottom3 = kv.Value == "Bottom3"
             }).ToList();
 
@@ -79,7 +79,7 @@ public class PredictionsCOntroller : Controller
             {
                 country = p.Country?.Name,
                 type = p.Type.ToString(),
-                placeInFinal = p.PlaceInFinal
+                placeInFinal = p.Place
             })
         });
     }

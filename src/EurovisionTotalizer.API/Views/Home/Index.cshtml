@@ -1,8 +1,186 @@
-﻿@using EurovisionTotalizer.API.Views
+﻿@model EurovisionTotalizer.API.ViewModels.RepositoriesViewModel
+@using EurovisionTotalizer.Domain.Enums
 @{
     ViewBag.Title = "Pagrindinis";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Pasirinkite meniu punktą</h1>
+<h1 class="page-title">Pasirinkite meniu punktą</h1>
 <p>Naudokite kairįjį meniu norėdami atidaryti puslapius.</p>
+
+<div class="tables-container">
+
+    <!-- Pusfinalis 1 -->
+    <div class="table-wrapper">
+        <h2>Pusfinalis 1</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Šalis</th>
+                    @foreach (var p in Model.Participants)
+                    {
+                        <th>@p.Name</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.Countries.Where(c => c.SemiFinal == SemiFinal.First))
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        @foreach (var p in Model.Participants)
+                        {
+                            var prediction = p.SemifinalPredictions
+                            .FirstOrDefault(x => x.Country.Name == c.Name);
+
+                            if (prediction?.Type == PredictionType.DoesNotReachFinal)
+                            {
+                                <td>X</td>
+                            }
+                            else
+                            {
+                                <td>-</td>
+                            }
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pusfinalis 2 -->
+    <div class="table-wrapper">
+        <h2>Pusfinalis 2</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Šalis</th>
+                    @foreach (var p in Model.Participants)
+                    {
+                        <th>@p.Name</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.Countries.Where(c => c.SemiFinal == SemiFinal.Second))
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        @foreach (var p in Model.Participants)
+                        {
+                            var prediction = p.SemifinalPredictions
+                            .FirstOrDefault(x => x.Country.Name == c.Name);
+
+                            if (prediction?.Type == PredictionType.DoesNotReachFinal)
+                            {
+                                <td>X</td>
+                            }
+                            else
+                            {
+                                <td>-</td>
+                            }
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Finalas -->
+    <div class="table-wrapper">
+        <h2>Finalas</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Šalis</th>
+                    @foreach (var p in Model.Participants)
+                    {
+                        <th>@p.Name</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.Countries.Where(c => c.IsInFinal))
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        @foreach (var p in Model.Participants)
+                        {
+                            var prediction = p.FinalPredictions
+                            .FirstOrDefault(x => x.Country.Name == c.Name);
+
+                            if (prediction?.Type == PredictionType.Last3InFinal)
+                            {
+                                <td>Bottom3</td>
+                            }
+                            else if (prediction?.Type == PredictionType.ExactPlaceInFinal && prediction.Place >= 1 && prediction.Place <= 10)
+                            {
+                                <td>@prediction.Place</td>
+                            }
+                            else
+                            {
+                                <td>-</td>
+                            }
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<style>
+    .page-title {
+        margin-bottom: 20px;
+        font-size: 26px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .tables-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .table-wrapper h2 {
+        margin-bottom: 12px;
+        font-size: 20px;
+        color: #444;
+    }
+
+    .styled-table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .styled-table thead {
+            background-color: #3b82f6;
+            color: white;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        .styled-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .styled-table tbody tr:hover {
+            background-color: #f1f5f9;
+        }
+
+        .styled-table th:first-child,
+        .styled-table td:first-child {
+            text-align: left;
+            font-weight: bold;
+        }
+</style>
