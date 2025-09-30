@@ -1,49 +1,52 @@
-﻿using EurovisionTotalizer.Domain.Calculators;
-using EurovisionTotalizer.Domain.Rankers;
+﻿using EurovisionTotalizer.Domain.Rankers;
 using EurovisionTotalizer.Domain.Models;
-using EurovisionTotalizer.Domain.Persistence.Factories;
 using EurovisionTotalizer.Domain.Persistence.Repositories;
 using EurovisionTotalizer.Domain.Persistence.Serializera;
+using EurovisionTotalizer.Domain.Persistence.Serializers;
+using EurovisionTotalizer.Domain.Calculators;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// ----------------- MVC Setup -----------------
 builder.Services.AddControllersWithViews();
 
-// Singleton factories
-builder.Services.AddSingleton<JsonStorageFactory>();
-builder.Services.AddSingleton<JsonSerializerFactory>();
+// ----------------- Factories -----------------
+builder.Services.AddScoped<IJsonSerializerFactory, JsonSerializerFactory>();
+builder.Services.AddScoped<IJsonStorageFactory, JsonStorageFactory>();
 
-// Scoped serializer per request
+// ----------------- Serializers -----------------
 builder.Services.AddScoped<IJsonSerializer>(sp =>
 {
-    var serializerFactory = sp.GetRequiredService<JsonSerializerFactory>();
+    var serializerFactory = sp.GetRequiredService<IJsonSerializerFactory>();
     return serializerFactory.Create();
 });
 
-// Scoped repo: Participant
+// ----------------- Repositories -----------------
 builder.Services.AddScoped<IJsonStorageRepository<Participant>>(sp =>
 {
-    var repoFactory = sp.GetRequiredService<JsonStorageFactory>();
+    var repoFactory = sp.GetRequiredService<IJsonStorageFactory>();
     var serializer = sp.GetRequiredService<IJsonSerializer>();
     return repoFactory.Create<Participant>("wwwroot/data/participants.json", serializer);
 });
 
-// Scoped repo: Country
 builder.Services.AddScoped<IJsonStorageRepository<Country>>(sp =>
 {
-    var repoFactory = sp.GetRequiredService<JsonStorageFactory>();
+    var repoFactory = sp.GetRequiredService<IJsonStorageFactory>();
     var serializer = sp.GetRequiredService<IJsonSerializer>();
     return repoFactory.Create<Country>("wwwroot/data/countries.json", serializer);
 });
 
-// 🔹 Čia pridėk savo servisų implementacijas
+// ----------------- Domain Services -----------------
 builder.Services.AddScoped<IScoreCalculator, ScoreCalculator>();
 builder.Services.AddScoped<IParticipantRanker, ParticipantRanker>();
+
+// ----------------- Factory Pattern Example -----------------
+// Jei įgyvendinsi scorer factory, registracija galėtų atrodyti taip:
+// builder.Services.AddScoped<IPredictionScorerFactory, PredictionScorerFactory>();
 
 var app = builder.Build();
 
 // ----------------- Klaidų puslapio konfigūracija -----------------
-
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();

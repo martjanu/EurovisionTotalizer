@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using EurovisionTotalizer.Domain.Calculators;
 using EurovisionTotalizer.Domain.Rankers;
 using EurovisionTotalizer.Domain.Models;
 using EurovisionTotalizer.Domain.Persistence.Repositories;
 using EurovisionTotalizer.API.ViewModels;
+using EurovisionTotalizer.Domain.Calculators;
 
 namespace EurovisionTotalizer.API.Controllers;
 

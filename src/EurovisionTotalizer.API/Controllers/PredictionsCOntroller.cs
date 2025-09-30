@@ -40,7 +40,7 @@ public class PredictionsCOntroller : Controller
 
         if (newParticipant != null)
         {
-            newParticipant.SemifinalPredictions = SemiPredictions.Select(kv => new SemifinalPrediction
+            newParticipant.SemifinalPredictions = SemiPredictions.Select(kv => new SemiFinalPrediction
             {
                 Country = _countryRepo.GetByName(kv.Key),
                 Type = Enum.Parse<PredictionType>(kv.Value.Replace(" ", ""), ignoreCase: true)

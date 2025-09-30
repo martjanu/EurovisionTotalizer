@@ -2,7 +2,7 @@
 
 namespace EurovisionTotalizer.Domain.Models;
 
-public class SemifinalPrediction
+public class SemiFinalPrediction : IPrediction
 {
     public PredictionType Type { get; set; } = PredictionType.DoesNotReachFinal;
     public Country? Country { get; set; }

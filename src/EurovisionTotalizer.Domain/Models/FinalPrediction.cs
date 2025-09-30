@@ -2,7 +2,7 @@
 
 namespace EurovisionTotalizer.Domain.Models;
 
-public class FinalPrediction
+public class FinalPrediction : IPrediction
 { 
     public PredictionType Type { get; set; } = PredictionType.Last3InFinal;
     public Country? Country { get; set; }
