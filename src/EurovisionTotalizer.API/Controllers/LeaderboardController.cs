@@ -12,25 +12,33 @@ public class LeaderboardController : Controller
     private readonly IScoreController _scoreController;
     private readonly IParticipantRanker _participantRanker;
     private readonly IJsonStorageRepository<Participant> _participantRepo;
+    private readonly IJsonStorageRepository<Country> _countryRepo;
 
     public LeaderboardController(
         IScoreController scoreController,
         IParticipantRanker participantRanker,
-        IJsonStorageRepository<Participant> participantRepo)
+        IJsonStorageRepository<Participant> participantRepo,
+        IJsonStorageRepository<Country> countryRepo)
     {
         _scoreController = scoreController ?? throw new ArgumentNullException(nameof(scoreController));
         _participantRanker = participantRanker ?? throw new ArgumentNullException(nameof(participantRanker));
         _participantRepo = participantRepo ?? throw new ArgumentNullException(nameof(participantRepo));
+        _countryRepo = countryRepo ?? throw new ArgumentNullException(nameof(countryRepo));
     }
 
     public IActionResult Leaderboard()
     {
-        var scoredParticipants = _participantRepo.GetAll();
-        scoredParticipants = _scoreController.CalculateTotalPoints(scoredParticipants);
+        var participants = _participantRepo.GetAll();
+        var countries = _countryRepo.GetAll();
+
+        participants = _scoreController.ResetAllPoints(participants);
+        participants = _scoreController.ScoreSemifinalPredictions(participants, countries);
+        participants = _scoreController.ScoreFinalPredictions(participants, countries);
+        participants = _scoreController.CalculateTotalPoints(participants);
 
         var model = new LeaderboardViewModel
         {
-            Participants = _participantRanker.GetRankedParticipants(_participantRepo.GetAll())
+            Participants = _participantRanker.GetRankedParticipants(participants).ToList()
         };
 
         return View(model);

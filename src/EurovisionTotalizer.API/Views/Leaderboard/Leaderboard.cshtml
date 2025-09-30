@@ -1,8 +1,46 @@
 ﻿@using EurovisionTotalizer.API.Views
+@model EurovisionTotalizer.API.ViewModels.LeaderboardViewModel
+
 @{
-    ViewBag.Title = "Leaderboradas";
+    ViewBag.Title = "Lyderių lentelė";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Leaderboradas</h1>
-<p>Čia bus lyderių lentelė.</p>
+<h1 class="mb-4">Lyderių lentelė</h1>
+
+<table class="table table-striped table-bordered table-hover text-center align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>Vieta</th>
+            <th>Dalyvis</th>
+            <th>Bendri taškai</th>
+            <th>Semifinal 1</th>
+            <th>Semifinal 2</th>
+            <th>Finalas</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Participants.Any())
+        {
+            var vieta = 1;
+            foreach (var participant in Model.Participants)
+            {
+                <tr>
+                    <td>@vieta</td>
+                    <td class="text-start">@participant.Name</td>
+                    <td><strong>@participant.TotalPoints</strong></td>
+                    <td>@participant.SemiFinal1Points</td>
+					<td>@participant.SemiFinal2Points</td>
+                    <td>@participant.FinalPoints</td>
+                </tr>
+                vieta++;
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" class="text-center text-muted">Dalyvių nėra</td>
+            </tr>
+        }
+    </tbody>
+</table>

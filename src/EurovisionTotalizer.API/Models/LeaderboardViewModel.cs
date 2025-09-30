@@ -4,5 +4,5 @@ namespace EurovisionTotalizer.API.ViewModels;
 
 public class LeaderboardViewModel
 {
-    public IEnumerable<Participant> Participants { get; set; } = Enumerable.Empty<Participant>();
+    public List<Participant> Participants { get; set; } = new List<Participant>();
 }
