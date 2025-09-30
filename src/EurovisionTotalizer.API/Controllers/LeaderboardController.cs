@@ -9,13 +9,13 @@ namespace EurovisionTotalizer.API.Controllers;
 
 public class LeaderboardController : Controller
 {
-    private readonly IScoreController _scoreController;
+    private readonly IScoreCalculator _scoreController;
     private readonly IParticipantRanker _participantRanker;
     private readonly IJsonStorageRepository<Participant> _participantRepo;
     private readonly IJsonStorageRepository<Country> _countryRepo;
 
     public LeaderboardController(
-        IScoreController scoreController,
+        IScoreCalculator scoreController,
         IParticipantRanker participantRanker,
         IJsonStorageRepository<Participant> participantRepo,
         IJsonStorageRepository<Country> countryRepo)

@@ -5,6 +5,6 @@ namespace EurovisionTotalizer.Domain.Factories;
 
 public class ScoreControllerFactory
 {
-    public IScoreController CreateScoreController()
-        => new ScoreController();
+    public IScoreCalculator CreateScoreController()
+        => new ScoreCalculator();
 }

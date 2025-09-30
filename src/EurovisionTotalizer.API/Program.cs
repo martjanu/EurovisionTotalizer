@@ -37,7 +37,7 @@ builder.Services.AddScoped<IJsonStorageRepository<Country>>(sp =>
 });
 
 // 🔹 Čia pridėk savo servisų implementacijas
-builder.Services.AddScoped<IScoreController, ScoreController>();
+builder.Services.AddScoped<IScoreCalculator, ScoreCalculator>();
 builder.Services.AddScoped<IParticipantRanker, ParticipantRanker>();
 
 var app = builder.Build();

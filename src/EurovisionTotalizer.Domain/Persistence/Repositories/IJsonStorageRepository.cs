@@ -1,13 +1,12 @@
-﻿
-namespace EurovisionTotalizer.Domain.Persistence.Repositories
+﻿using EurovisionTotalizer.Domain.Models;
+
+namespace EurovisionTotalizer.Domain.Persistence.Repositories;
+
+public interface IJsonStorageRepository<T> where T : IHasName
 {
-    public interface IJsonStorageRepository<IHasName>
-    {
-        void Add(IHasName item);
-        void Delete(IHasName item);
-        bool Exists(Func<IHasName, bool> predicate);
-        IEnumerable<IHasName> GetAll();
-        IHasName? GetByName(string name);
-        void Update(IHasName item, IHasName newItem);
-    }
+    void Add(T item);
+    void Delete(T item);
+    IEnumerable<T> GetAll();
+    T? GetByName(string name);
+    void Update(T item, T newItem);
 }

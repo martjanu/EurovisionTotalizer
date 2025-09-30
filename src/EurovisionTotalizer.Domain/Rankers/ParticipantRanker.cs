@@ -1,23 +1,20 @@
 ﻿using EurovisionTotalizer.Domain.Models;
-using EurovisionTotalizer.Domain.Persistence.Repositories;
 
 namespace EurovisionTotalizer.Domain.Rankers;
 
 public class ParticipantRanker : IParticipantRanker
 {
-    private readonly IJsonStorageRepository<Participant> _participantRepository;
+    private readonly IRankingStrategy _rankingStrategy;
 
-    public ParticipantRanker(IJsonStorageRepository<Participant> participantRepository)
+    public ParticipantRanker(IRankingStrategy rankingStrategy)
     {
-        _participantRepository = participantRepository ?? throw new ArgumentNullException(nameof(participantRepository));
+        _rankingStrategy = rankingStrategy ?? throw new ArgumentNullException(nameof(rankingStrategy));
     }
 
     public IEnumerable<Participant> GetRankedParticipants(IEnumerable<Participant> participants)
     {
-        return participants
-            .OrderByDescending(p => p.TotalPoints)
-            .ThenByDescending(p => p.FinalPoints)
-            .ThenByDescending(p => p.SemiFinal1Points + p.SemiFinal2Points)
-            .ThenByDescending(p => p.SemiFinal1Points);
+        if (participants == null) throw new ArgumentNullException(nameof(participants));
+
+        return _rankingStrategy.Rank(participants);
     }
 }

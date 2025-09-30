@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Calculations\" />
+    <Folder Include="Calculators\" />
   </ItemGroup>
 
 </Project>

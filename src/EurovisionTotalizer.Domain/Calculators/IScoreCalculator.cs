@@ -2,7 +2,7 @@
 
 namespace EurovisionTotalizer.Domain.Calculators
 {
-    public interface IScoreController
+    public interface IScoreCalculator
     {
         IEnumerable<Participant> CalculateTotalPoints(IEnumerable<Participant> participants);
         IEnumerable<Participant> ResetAllPoints(IEnumerable<Participant> participants);

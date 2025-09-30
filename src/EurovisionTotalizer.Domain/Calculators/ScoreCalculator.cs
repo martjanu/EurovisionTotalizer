@@ -3,7 +3,7 @@ using EurovisionTotalizer.Domain.Models;
 
 namespace EurovisionTotalizer.Domain.Calculators;
 
-public class ScoreController : IScoreController
+public class ScoreCalculator : IScoreCalculator
 {
     public IEnumerable<Participant> ScoreSemifinalPredictions(IEnumerable<Participant> participants, IEnumerable<Country> countries)
     {
