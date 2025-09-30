@@ -74,24 +74,25 @@ namespace EurovisionTotalizer.Domain.Persistence.Repositories
             return LoadData();
         }
 
-        public void Update(T item, T newItem)
+        public void Update(T updatedItem)
         {
-            if (item == null) throw new ArgumentNullException(nameof(item));
-            if (newItem == null) throw new ArgumentNullException(nameof(newItem));
+            if (updatedItem == null)
+                throw new ArgumentNullException(nameof(updatedItem));
 
             var items = LoadData();
-            var index = items.FindIndex(x => x.Name == item.Name);
+            var index = items.FindIndex(x => x.Name == updatedItem.Name);
 
             if (index >= 0)
             {
-                items[index] = newItem;
+                items[index] = updatedItem;
                 SaveData(items);
             }
             else
             {
-                throw new KeyNotFoundException($"Item with name '{item.Name}' not found.");
+                throw new KeyNotFoundException($"Item with name '{updatedItem.Name}' not found.");
             }
         }
+
 
         public void Delete(T item)
         {

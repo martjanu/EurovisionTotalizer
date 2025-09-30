@@ -1,28 +1,28 @@
-﻿using EurovisionTotalizer.API.ViewModels;
-using EurovisionTotalizer.Domain.Models;
-using EurovisionTotalizer.Domain.Persistence.Repositories;
+﻿using EurovisionTotalizer.Application.Services.Home;
+using EurovisionTotalizer.API.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+
+namespace EurovisionTotalizer.API.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly IJsonStorageRepository<Participant> _participantRepo;
-    private readonly IJsonStorageRepository<Country> _countryRepo;
+    private readonly IHomeService _homeService;
 
-    public HomeController(
-         IJsonStorageRepository<Participant> participantRepo,
-         IJsonStorageRepository<Country> countryRepo)
+    public HomeController(IHomeService homeService)
     {
-        _participantRepo = participantRepo ?? throw new ArgumentNullException(nameof(participantRepo));
-        _countryRepo = countryRepo ?? throw new ArgumentNullException(nameof(countryRepo));
+        _homeService = homeService;
     }
 
     public IActionResult Index()
     {
+        var dto = _homeService.GetRepositories();
+
         var model = new RepositoriesViewModel
         {
-            Participants = _participantRepo.GetAll(),
-            Countries = _countryRepo.GetAll()
+            Participants = dto.Participants,
+            Countries = dto.Countries
         };
+
         return View(model);
     }
 
@@ -31,4 +31,3 @@ public class HomeController : Controller
         return View();
     }
 }
-

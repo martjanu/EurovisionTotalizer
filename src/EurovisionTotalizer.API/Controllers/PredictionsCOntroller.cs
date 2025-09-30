@@ -54,7 +54,7 @@ public class PredictionsCOntroller : Controller
                 IsBottom3 = kv.Value == "Bottom3"
             }).ToList();
 
-            _participantRepo.Update(oldParticipant, newParticipant);
+            _participantRepo.Update(newParticipant);
         }
 
         return RedirectToAction("Predictions");

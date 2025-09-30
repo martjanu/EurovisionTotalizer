@@ -111,7 +111,7 @@ public class DataEntryController : Controller
                 PlaceInFinal = PlaceInFinal
             };
 
-            _countryRepo.Update(oldCountry, newCountry);
+            _countryRepo.Update(newCountry);
         }
 
         return RedirectToAction("DataEntry");

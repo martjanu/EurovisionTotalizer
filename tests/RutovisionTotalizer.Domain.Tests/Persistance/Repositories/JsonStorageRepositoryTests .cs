@@ -76,12 +76,12 @@ public class JsonStorageRepositoryTests
     [Fact]
     public void Update_Should_Update_Item_When_Exists()
     {
-        var repo = CreateRepositoryWithData(new List<TestItem> { new TestItem { Name = "OldName" } });
+        var repo = CreateRepositoryWithData(new List<TestItem> { new TestItem { Name = "Test1" } });
 
-        var newItem = new TestItem { Name = "NewName" };
-        repo.Update(new TestItem { Name = "OldName" }, newItem);
+        var updatedItem = new TestItem { Name = "Test1" }; // Name = "Test1" → tas pats objektas, tik kiti duomenys
+        repo.Update(updatedItem);
 
-        repo.GetAll().Should().ContainSingle().Which.Name.Should().Be("NewName");
+        repo.GetAll().Should().ContainSingle().Which.Name.Should().Be("Test1");
     }
 
     [Fact]
@@ -89,10 +89,11 @@ public class JsonStorageRepositoryTests
     {
         var repo = CreateRepositoryWithData(new List<TestItem>());
 
-        var newItem = new TestItem { Name = "NewName" };
+        var updatedItem = new TestItem { Name = "NoName" };
 
-        Assert.Throws<KeyNotFoundException>(() => repo.Update(new TestItem { Name = "NoName" }, newItem));
+        Assert.Throws<KeyNotFoundException>(() => repo.Update(updatedItem));
     }
+
 
     [Fact]
     public void Delete_Should_Remove_Item_When_Exists()

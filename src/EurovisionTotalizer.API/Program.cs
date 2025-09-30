@@ -5,6 +5,7 @@ using EurovisionTotalizer.Domain.Persistence.Serializers;
 using EurovisionTotalizer.Domain.Calculators;
 using EurovisionTotalizer.Domain.Scorers;
 using EurovisionTotalizer.Domain.Persistence.Serializera;
+using EurovisionTotalizer.Application.Services.Home;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -56,8 +57,9 @@ builder.Services.AddScoped<IScoreCalculator, ScoreCalculator>();
 builder.Services.AddScoped<IParticipantRanker, ParticipantRanker>();
 
 // ----------------- Ranking strategy -----------------
-// !!! jei tavo klasė vadinasi kitaip, pakeisk čia !!!
 builder.Services.AddScoped<IRankingStrategy, RankingStrategy>();
+// ----------------- Application Services -----------------
+builder.Services.AddScoped<IHomeService, HomeService>();
 
 var app = builder.Build();
 
