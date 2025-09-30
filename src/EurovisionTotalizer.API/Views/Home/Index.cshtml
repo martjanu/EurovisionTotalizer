@@ -1,22 +1,22 @@
 ﻿@model EurovisionTotalizer.API.ViewModels.RepositoriesViewModel
 @using EurovisionTotalizer.Domain.Enums
 @{
-    ViewBag.Title = "Pagrindinis";
+    ViewBag.Title = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 class="page-title">Pasirinkite meniu punktą</h1>
-<p>Naudokite kairįjį meniu norėdami atidaryti puslapius.</p>
+<h1 class="page-title">Select a menu item</h1>
+<p>Use the left menu to open pages.</p>
 
 <div class="tables-container">
 
-    <!-- Pusfinalis 1 -->
+    <!-- Semifinal 1 -->
     <div class="table-wrapper">
-        <h2>Pusfinalis 1</h2>
+        <h2>Semifinal 1</h2>
         <table class="styled-table">
             <thead>
                 <tr>
-                    <th>Šalis</th>
+                    <th>Country</th>
                     @foreach (var p in Model.Participants)
                     {
                         <th>@p.Name</th>
@@ -48,13 +48,13 @@
         </table>
     </div>
 
-    <!-- Pusfinalis 2 -->
+    <!-- Semifinal 2 -->
     <div class="table-wrapper">
-        <h2>Pusfinalis 2</h2>
+        <h2>Semifinal 2</h2>
         <table class="styled-table">
             <thead>
                 <tr>
-                    <th>Šalis</th>
+                    <th>Country</th>
                     @foreach (var p in Model.Participants)
                     {
                         <th>@p.Name</th>
@@ -86,13 +86,13 @@
         </table>
     </div>
 
-    <!-- Finalas -->
+    <!-- Final -->
     <div class="table-wrapper">
-        <h2>Finalas</h2>
+        <h2>Final</h2>
         <table class="styled-table">
             <thead>
                 <tr>
-                    <th>Šalis</th>
+                    <th>Country</th>
                     @foreach (var p in Model.Participants)
                     {
                         <th>@p.Name</th>

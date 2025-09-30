@@ -1,6 +1,6 @@
 ﻿@model EurovisionTotalizer.API.ViewModels.RepositoriesViewModel
 @{
-    ViewBag.Title = "Duomenų įvedimas";
+    ViewBag.Title = "Data Entry";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link rel="stylesheet" href="~/css/dataentry.css" />
@@ -19,15 +19,15 @@
         <!-- Read Data -->
         <div id="read">
             <h2>Read Data</h2>
-            <p>Visos šalys ir dalyviai:</p>
+            <p>All countries and participants:</p>
             <ul>
                 @foreach (var p in Model.Participants)
                 {
-                    <li>Dalyvis: @p.Name </li>
+                    <li>Participant: @p.Name </li>
                 }
                 @foreach (var c in Model.Countries)
                 {
-                    <li>Šalis: @c.Name - @c.SemiFinal - @c.IsInFinal - @c.PlaceInFinal </li>
+                    <li>Country: @c.Name - @c.SemiFinal - @c.IsInFinal - @c.PlaceInFinal </li>
                 }
             </ul>
         </div>
@@ -35,9 +35,9 @@
         <!-- Update -->
         <div id="update">
             <h2>Update</h2>
-            <p>Pasirink šalį:</p>
+            <p>Select a country:</p>
             <select id="entity-select">
-                <option value="">-- Pasirink --</option>
+                <option value="">-- Select --</option>
                 @foreach (var c in Model.Countries)
                 {
                     <option data-type="country" value="@c.Name">@c.Name</option>
@@ -50,7 +50,7 @@
                 <div id="country-fields" style="display:none; margin-top: 15px;">
                     <label>
                         Name:
-                        <input type="text" name="Name" id="country-name" readonly  />
+                        <input type="text" name="Name" id="country-name" readonly />
                     </label>
                     <br />
 
@@ -85,15 +85,15 @@
         <div id="delete">
             <h2>Delete</h2>
             <form asp-controller="DataEntry" asp-action="Delete" method="post">
-                <p>Pasirink šalį ar dalyvį:</p>
+                <p>Select a country or participant:</p>
                 <select name="name">
                     @foreach (var p in Model.Participants)
                     {
-                        <option value="participant:@p.Name">@p.Name (Dalyvis)</option>
+                        <option value="participant:@p.Name">@p.Name (Participant)</option>
                     }
                     @foreach (var c in Model.Countries)
                     {
-                        <option value="country:@c.Name">@c.Name (Šalis)</option>
+                        <option value="country:@c.Name">@c.Name (Country)</option>
                     }
                 </select>
                 <button type="submit">Submit</button>
@@ -104,12 +104,12 @@
         <div id="create">
             <h2>Create Data</h2>
             <form asp-controller="DataEntry" asp-action="Create" method="post">
-                <p>Pasirink ką kurti:</p>
+                <p>Select what to create:</p>
                 <select id="create-type" name="Type">
-                    <option value="participant">Dalyvis</option>
-                    <option value="country">Šalis</option>
+                    <option value="participant">Participant</option>
+                    <option value="country">Country</option>
                 </select>
-                <input type="text" id="create-name" name="Name" placeholder="Įvesk vardą" required />
+                <input type="text" id="create-name" name="Name" placeholder="Enter name" required />
                 <select id="create-additional" name="Additional">
                     <option value="0">none</option>
                     <option value="1">first</option>
@@ -123,5 +123,3 @@
 
 <script src="~/js/dataentry-create.js"></script>
 <script src="~/js/dataentry-update.js"></script>
-
-

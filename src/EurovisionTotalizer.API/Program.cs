@@ -1,9 +1,10 @@
-﻿using EurovisionTotalizer.Domain.Rankers;
-using EurovisionTotalizer.Domain.Models;
+﻿using EurovisionTotalizer.Domain.Models;
+using EurovisionTotalizer.Domain.Rankers;
 using EurovisionTotalizer.Domain.Persistence.Repositories;
-using EurovisionTotalizer.Domain.Persistence.Serializera;
 using EurovisionTotalizer.Domain.Persistence.Serializers;
 using EurovisionTotalizer.Domain.Calculators;
+using EurovisionTotalizer.Domain.Scorers;
+using EurovisionTotalizer.Domain.Persistence.Serializera;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ builder.Services.AddControllersWithViews();
 // ----------------- Factories -----------------
 builder.Services.AddScoped<IJsonSerializerFactory, JsonSerializerFactory>();
 builder.Services.AddScoped<IJsonStorageFactory, JsonStorageFactory>();
+builder.Services.AddScoped<IScorerFactory, ScorerFactory>();
 
 // ----------------- Serializers -----------------
 builder.Services.AddScoped<IJsonSerializer>(sp =>
@@ -36,17 +38,30 @@ builder.Services.AddScoped<IJsonStorageRepository<Country>>(sp =>
     return repoFactory.Create<Country>("wwwroot/data/countries.json", serializer);
 });
 
+// ----------------- Scorers -----------------
+builder.Services.AddScoped<IPredictionScorer<SemiFinalPrediction>>(sp =>
+{
+    var factory = sp.GetRequiredService<IScorerFactory>();
+    return factory.CreateSemiFinalPredictionScorer();
+});
+
+builder.Services.AddScoped<IPredictionScorer<FinalPrediction>>(sp =>
+{
+    var factory = sp.GetRequiredService<IScorerFactory>();
+    return factory.CreateFinalPredictionScorer();
+});
+
 // ----------------- Domain Services -----------------
 builder.Services.AddScoped<IScoreCalculator, ScoreCalculator>();
 builder.Services.AddScoped<IParticipantRanker, ParticipantRanker>();
 
-// ----------------- Factory Pattern Example -----------------
-// Jei įgyvendinsi scorer factory, registracija galėtų atrodyti taip:
-// builder.Services.AddScoped<IPredictionScorerFactory, PredictionScorerFactory>();
+// ----------------- Ranking strategy -----------------
+// !!! jei tavo klasė vadinasi kitaip, pakeisk čia !!!
+builder.Services.AddScoped<IRankingStrategy, RankingStrategy>();
 
 var app = builder.Build();
 
-// ----------------- Klaidų puslapio konfigūracija -----------------
+// ----------------- Error page configuration -----------------
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();

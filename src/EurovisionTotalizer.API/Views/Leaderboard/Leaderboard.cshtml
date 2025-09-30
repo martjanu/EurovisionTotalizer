@@ -2,44 +2,44 @@
 @model EurovisionTotalizer.API.ViewModels.LeaderboardViewModel
 
 @{
-    ViewBag.Title = "Lyderių lentelė";
+    ViewBag.Title = "Leaderboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 class="mb-4">Lyderių lentelė</h1>
+<h1 class="mb-4">Leaderboard</h1>
 
 <table class="table table-striped table-bordered table-hover text-center align-middle">
     <thead class="table-dark">
         <tr>
-            <th>Vieta</th>
-            <th>Dalyvis</th>
-            <th>Bendri taškai</th>
+            <th>Place</th>
+            <th>Participant</th>
+            <th>Total Points</th>
             <th>Semifinal 1</th>
             <th>Semifinal 2</th>
-            <th>Finalas</th>
+            <th>Final</th>
         </tr>
     </thead>
     <tbody>
         @if (Model != null && Model.Participants.Any())
         {
-            var vieta = 1;
+            var place = 1;
             foreach (var participant in Model.Participants)
             {
                 <tr>
-                    <td>@vieta</td>
+                    <td>@place</td>
                     <td class="text-start">@participant.Name</td>
                     <td><strong>@participant.TotalPoints</strong></td>
                     <td>@participant.SemiFinal1Points</td>
-					<td>@participant.SemiFinal2Points</td>
+                    <td>@participant.SemiFinal2Points</td>
                     <td>@participant.FinalPoints</td>
                 </tr>
-                vieta++;
+                place++;
             }
         }
         else
         {
             <tr>
-                <td colspan="6" class="text-center text-muted">Dalyvių nėra</td>
+                <td colspan="6" class="text-center text-muted">No participants</td>
             </tr>
         }
     </tbody>

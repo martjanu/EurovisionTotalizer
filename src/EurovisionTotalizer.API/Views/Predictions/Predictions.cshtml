@@ -3,16 +3,16 @@
 @model EurovisionTotalizer.API.ViewModels.RepositoriesViewModel
 
 @{
-    ViewBag.Title = "Spėjimų lentelės";
+    ViewBag.Title = "Prediction Tables";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Spėjimų lentelės</h1>
-<p>Čia bus spėjimų lentelės ir rezultatai.</p>
+<h1>Prediction Tables</h1>
+<p>Here will be the prediction tables and results.</p>
 
 <form asp-action="UpdatePredictions" method="post">
-    <!-- Dalyvio pasirinkimas -->
-    <label for="participant">Pasirinkite dalyvį:</label>
+    <!-- Participant selection -->
+    <label for="participant">Select participant:</label>
     <select id="participant" name="ParticipantName">
         @foreach (var p in Model.Participants)
         {
@@ -22,21 +22,21 @@
 
     <br /><br />
 
-    <!-- Lentelės pasirinkimo dropdown -->
-    <label for="tableSelector">Pasirinkite lentelę:</label>
+    <!-- Table selection dropdown -->
+    <label for="tableSelector">Select table:</label>
     <select id="tableSelector">
-        <option value="all">Visos lentelės</option>
-        <option value="semi1">1 pusfinalis</option>
-        <option value="semi2">2 pusfinalis</option>
-        <option value="final">Finalas</option>
+        <option value="all">All tables</option>
+        <option value="semi1">Semifinal 1</option>
+        <option value="semi2">Semifinal 2</option>
+        <option value="final">Final</option>
     </select>
 
     <div style="display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
-        <!-- 1 pusfinalio lentelė -->
+        <!-- Semifinal 1 table -->
         <table id="table-semi1" border="1" style="border-collapse: collapse; width: 30%;">
             <thead>
-                <tr><th colspan="2">1 pusfinalis</th></tr>
-                <tr><th>Šalis</th><th>Spėjimas</th></tr>
+                <tr><th colspan="2">Semifinal 1</th></tr>
+                <tr><th>Country</th><th>Prediction</th></tr>
             </thead>
             <tbody>
                 @foreach (var c in Model.Countries.Where(c => c.SemiFinal == SemiFinal.First))
@@ -54,11 +54,11 @@
             </tbody>
         </table>
 
-        <!-- 2 pusfinalio lentelė -->
+        <!-- Semifinal 2 table -->
         <table id="table-semi2" border="1" style="border-collapse: collapse; width: 30%;">
             <thead>
-                <tr><th colspan="2">2 pusfinalis</th></tr>
-                <tr><th>Šalis</th><th>Spėjimas</th></tr>
+                <tr><th colspan="2">Semifinal 2</th></tr>
+                <tr><th>Country</th><th>Prediction</th></tr>
             </thead>
             <tbody>
                 @foreach (var c in Model.Countries.Where(c => c.SemiFinal == SemiFinal.Second))
@@ -76,11 +76,11 @@
             </tbody>
         </table>
 
-        <!-- Finalo lentelė -->
+        <!-- Final table -->
         <table id="table-final" border="1" style="border-collapse: collapse; width: 30%;">
             <thead>
-                <tr><th colspan="2">Finalas</th></tr>
-                <tr><th>Šalis</th><th>Spėjimas</th></tr>
+                <tr><th colspan="2">Final</th></tr>
+                <tr><th>Country</th><th>Prediction</th></tr>
             </thead>
             <tbody>
                 @foreach (var c in Model.Countries.Where(c => c.IsInFinal))
@@ -104,8 +104,8 @@
     </div>
 
     <br />
-    <button type="submit" class="btn btn-primary">Išsaugoti spėjimus</button>
+    <button type="submit" class="btn btn-primary">Save Predictions</button>
 </form>
 
-<!-- Prijungiamas JS failas -->
+<!-- Linked JS file -->
 <script src="~/js/predictions.js"></script>
