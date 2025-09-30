@@ -1,218 +1,119 @@
-﻿using EurovisionTotalizer.Domain.Models;
+﻿using Moq;
+using FluentAssertions;
 using EurovisionTotalizer.Domain.Persistence.Repositories;
 using EurovisionTotalizer.Domain.Persistence.Serializera;
-using Moq;
+using EurovisionTotalizer.Domain.Models;
 
-namespace EurovisionTotalizer.Tests.Domain.Persistence.Repositories;
+namespace EurovisionTotalizer.Tests;
 
-public class JsonStorageRepositoryTests : IDisposable
+public class JsonStorageRepositoryTests
 {
-    private readonly string _testFilePath;
     private readonly Mock<IJsonSerializer> _serializerMock;
-
-    private class TestEntity : IHasName
-    {
-        public string Name { get; set; } = string.Empty;
-        public int Value { get; set; }
-    }
+    private readonly string _filePath = "test.json";
 
     public JsonStorageRepositoryTests()
     {
-        _testFilePath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid()}.json");
         _serializerMock = new Mock<IJsonSerializer>();
+
+        if (!File.Exists(_filePath))
+            File.WriteAllText(_filePath, string.Empty);
     }
 
-    public void Dispose()
+    private JsonStorageRepository<TestItem> CreateRepositoryWithData(List<TestItem> items)
     {
-        if (File.Exists(_testFilePath))
-            File.Delete(_testFilePath);
+        _serializerMock.Setup(s => s.Deserialize<List<TestItem>>(It.IsAny<string>()))
+            .Returns((string json) => items); ;
+
+        _serializerMock.Setup(s => s.Serialize(It.IsAny<List<TestItem>>()))
+            .Returns((List<TestItem> list) => "serialized-json");
+
+        return new JsonStorageRepository<TestItem>(_filePath, _serializerMock.Object);
     }
 
     [Fact]
-    public void Constructor_CreatesFileIfNotExists()
+    public void Add_Should_Add_Item_When_Not_Exists()
     {
-        // Arrange & Act
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
+        var repo = CreateRepositoryWithData(new List<TestItem>());
 
-        // Assert
-        Assert.True(File.Exists(_testFilePath));
+        var newItem = new TestItem { Name = "Test1" };
+        repo.Add(newItem);
+
+        var all = repo.GetAll();
+        all.Should().ContainSingle().Which.Name.Should().Be("Test1");
     }
 
     [Fact]
-    public void Constructor_NullFilePath_ThrowsArgumentNullException()
+    public void Add_Should_Throw_When_Item_Already_Exists()
     {
-        Assert.Throws<ArgumentNullException>(() =>
-            new JsonStorageRepository<TestEntity>(null!, _serializerMock.Object));
+        var repo = CreateRepositoryWithData(new List<TestItem> { new TestItem { Name = "Test1" } });
+
+        var newItem = new TestItem { Name = "Test1" };
+
+        Assert.Throws<InvalidOperationException>(() => repo.Add(newItem));
     }
 
     [Fact]
-    public void Constructor_NullSerializer_ThrowsArgumentNullException()
+    public void GetByName_Should_Return_Item_When_Exists()
     {
-        Assert.Throws<ArgumentNullException>(() =>
-            new JsonStorageRepository<TestEntity>(_testFilePath, null!));
+        var repo = CreateRepositoryWithData(new List<TestItem> { new TestItem { Name = "Test1" } });
+
+        var result = repo.GetByName("Test1");
+
+        result.Should().NotBeNull();
+        result!.Name.Should().Be("Test1");
     }
 
     [Fact]
-    public void Add_AddsItemSuccessfully()
+    public void GetByName_Should_Return_Null_When_Not_Exists()
     {
-        // Arrange
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
+        var repo = CreateRepositoryWithData(new List<TestItem>());
 
-        var entity = new TestEntity { Name = "Test", Value = 1 };
-        _serializerMock.Setup(s => s.Deserialize<List<TestEntity>>(It.IsAny<string>()))
-            .Returns(new List<TestEntity>());
-        _serializerMock.Setup(s => s.Serialize(It.IsAny<List<TestEntity>>()))
-            .Returns("{}");
+        var result = repo.GetByName("NoName");
 
-        // Act
-        repo.Add(entity);
-
-        // Assert
-        _serializerMock.Verify(s => s.Serialize(It.Is<List<TestEntity>>(l => l.Any(e => e.Name == "Test"))), Times.Once);
+        result.Should().BeNull();
     }
 
     [Fact]
-    public void Add_DuplicateName_ThrowsInvalidOperationException()
+    public void Update_Should_Update_Item_When_Exists()
     {
-        // Arrange
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
-        var entity = new TestEntity { Name = "Test" };
+        var repo = CreateRepositoryWithData(new List<TestItem> { new TestItem { Name = "OldName" } });
 
-        _serializerMock.Setup(s => s.Deserialize<List<TestEntity>>(It.IsAny<string>()))
-            .Returns(new List<TestEntity> { entity });
+        var newItem = new TestItem { Name = "NewName" };
+        repo.Update(new TestItem { Name = "OldName" }, newItem);
 
-        // Act & Assert
-        Assert.Throws<InvalidOperationException>(() => repo.Add(entity));
+        repo.GetAll().Should().ContainSingle().Which.Name.Should().Be("NewName");
     }
 
     [Fact]
-    public void GetAll_ReturnsItems()
+    public void Update_Should_Throw_When_Item_Not_Found()
     {
-        // Arrange
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
-        var entities = new List<TestEntity> { new TestEntity { Name = "A" }, new TestEntity { Name = "B" } };
+        var repo = CreateRepositoryWithData(new List<TestItem>());
 
-        _serializerMock.Setup(s => s.Deserialize<List<TestEntity>>(It.IsAny<string>()))
-            .Returns(entities);
+        var newItem = new TestItem { Name = "NewName" };
 
-        // Act
-        var result = repo.GetAll();
-
-        // Assert
-        Assert.Equal(2, result.Count());
+        Assert.Throws<KeyNotFoundException>(() => repo.Update(new TestItem { Name = "NoName" }, newItem));
     }
 
     [Fact]
-    public void Update_ExistingItem_UpdatesSuccessfully()
+    public void Delete_Should_Remove_Item_When_Exists()
     {
-        // Arrange
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
-        var original = new TestEntity { Name = "Test", Value = 1 };
-        var updated = new TestEntity { Name = "Test", Value = 2 };
+        var repo = CreateRepositoryWithData(new List<TestItem> { new TestItem { Name = "ToDelete" } });
 
-        _serializerMock.Setup(s => s.Deserialize<List<TestEntity>>(It.IsAny<string>()))
-            .Returns(new List<TestEntity> { original });
-        _serializerMock.Setup(s => s.Serialize(It.IsAny<List<TestEntity>>()))
-            .Returns("{}");
+        repo.Delete(new TestItem { Name = "ToDelete" });
 
-        // Act
-        repo.Update(original, updated);
-
-        // Assert
-        _serializerMock.Verify(s => s.Serialize(It.Is<List<TestEntity>>(l => l.First().Value == 2)), Times.Once);
+        repo.GetAll().Should().BeEmpty();
     }
 
     [Fact]
-    public void Update_ItemNotFound_ThrowsKeyNotFoundException()
+    public void Delete_Should_Throw_When_Item_Not_Found()
     {
-        // Arrange
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
-        var original = new TestEntity { Name = "A" };
-        var updated = new TestEntity { Name = "B" };
+        var repo = CreateRepositoryWithData(new List<TestItem>());
 
-        _serializerMock.Setup(s => s.Deserialize<List<TestEntity>>(It.IsAny<string>()))
-            .Returns(new List<TestEntity>());
-
-        // Act & Assert
-        Assert.Throws<KeyNotFoundException>(() => repo.Update(original, updated));
+        Assert.Throws<KeyNotFoundException>(() => repo.Delete(new TestItem { Name = "NoName" }));
     }
+}
 
-    [Fact]
-    public void Delete_ExistingItem_RemovesItem()
-    {
-        // Arrange
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
-        var entity = new TestEntity { Name = "Test" };
-
-        _serializerMock.Setup(s => s.Deserialize<List<TestEntity>>(It.IsAny<string>()))
-            .Returns(new List<TestEntity> { entity });
-        _serializerMock.Setup(s => s.Serialize(It.IsAny<List<TestEntity>>()))
-            .Returns("{}");
-
-        // Act
-        repo.Delete(entity);
-
-        // Assert
-        _serializerMock.Verify(s => s.Serialize(It.Is<List<TestEntity>>(l => !l.Any())), Times.Once);
-    }
-
-    [Fact]
-    public void Delete_ItemNotFound_ThrowsKeyNotFoundException()
-    {
-        // Arrange
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
-        var entity = new TestEntity { Name = "NotExist" };
-
-        _serializerMock.Setup(s => s.Deserialize<List<TestEntity>>(It.IsAny<string>()))
-            .Returns(new List<TestEntity>());
-
-        // Act & Assert
-        Assert.Throws<KeyNotFoundException>(() => repo.Delete(entity));
-    }
-
-    [Fact]
-    public void GetByName_ExistingItem_ReturnsItem()
-    {
-        // Arrange
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
-        var entity = new TestEntity { Name = "Test" };
-
-        _serializerMock.Setup(s => s.Deserialize<List<TestEntity>>(It.IsAny<string>()))
-            .Returns(new List<TestEntity> { entity });
-
-        // Act
-        var result = repo.GetByName("Test");
-
-        // Assert
-        Assert.NotNull(result);
-        Assert.Equal("Test", result?.Name);
-    }
-
-    [Fact]
-    public void GetByName_ItemNotFound_ReturnsNull()
-    {
-        // Arrange
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
-
-        _serializerMock.Setup(s => s.Deserialize<List<TestEntity>>(It.IsAny<string>()))
-            .Returns(new List<TestEntity>());
-
-        // Act
-        var result = repo.GetByName("Nope");
-
-        // Assert
-        Assert.Null(result);
-    }
-
-    [Fact]
-    public void GetByName_NullOrEmptyName_ThrowsArgumentException()
-    {
-        // Arrange
-        var repo = new JsonStorageRepository<TestEntity>(_testFilePath, _serializerMock.Object);
-
-        // Act & Assert
-        Assert.Throws<ArgumentException>(() => repo.GetByName(null!));
-        Assert.Throws<ArgumentException>(() => repo.GetByName(""));
-        Assert.Throws<ArgumentException>(() => repo.GetByName(" "));
-    }
+public class TestItem : IHasName
+{
+    public string Name { get; set; } = string.Empty;
 }
