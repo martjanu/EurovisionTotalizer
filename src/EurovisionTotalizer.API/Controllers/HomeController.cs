@@ -19,15 +19,18 @@ public class HomeController : Controller
 
         var model = new RepositoriesViewModel
         {
-            Participants = dto.Participants,
-            Countries = dto.Countries
+            Tables = dto.Tables.Select(t => new TableViewModel
+            {
+                Title = t.Title,
+                ParticipantNames = t.ParticipantNames, // <- BŪTINAI reikia perduoti
+                Rows = t.Rows.Select(r => new TableRowViewModel
+                {
+                    CountryName = r.CountryName,
+                    Predictions = r.Predictions
+                }).ToList()
+            }).ToList()
         };
 
         return View(model);
-    }
-
-    public IActionResult Leaderboard()
-    {
-        return View();
     }
 }
