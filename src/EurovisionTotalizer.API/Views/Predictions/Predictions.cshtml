@@ -1,0 +1,111 @@
+﻿@using EurovisionTotalizer.API.Views
+@using EurovisionTotalizer.Domain.Enums
+@model EurovisionTotalizer.API.ViewModels.RepositoriesViewModel
+
+@{
+    ViewBag.Title = "Prediction Tables";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Prediction Tables</h1>
+<p>Here will be the prediction tables and results.</p>
+
+<form asp-action="UpdatePredictions" method="post">
+    <!-- Participant selection -->
+    <label for="participant">Select participant:</label>
+    <select id="participant" name="ParticipantName">
+        @foreach (var p in Model.Participants)
+        {
+            <option value="@p.Name">@p.Name</option>
+        }
+    </select>
+
+    <br /><br />
+
+    <!-- Table selection dropdown -->
+    <label for="tableSelector">Select table:</label>
+    <select id="tableSelector">
+        <option value="all">All tables</option>
+        <option value="semi1">Semifinal 1</option>
+        <option value="semi2">Semifinal 2</option>
+        <option value="final">Final</option>
+    </select>
+
+    <div style="display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
+        <!-- Semifinal 1 table -->
+        <table id="table-semi1" border="1" style="border-collapse: collapse; width: 30%;">
+            <thead>
+                <tr><th colspan="2">Semifinal 1</th></tr>
+                <tr><th>Country</th><th>Prediction</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.Countries.Where(c => c.SemiFinal == SemiFinal.First))
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        <td>
+                            <select name="SemiPredictions[@c.Name]">
+                                <option value="none">none</option>
+                                <option value="DoesNotReachFinal">Does Not Reach Final</option>
+                            </select>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Semifinal 2 table -->
+        <table id="table-semi2" border="1" style="border-collapse: collapse; width: 30%;">
+            <thead>
+                <tr><th colspan="2">Semifinal 2</th></tr>
+                <tr><th>Country</th><th>Prediction</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.Countries.Where(c => c.SemiFinal == SemiFinal.Second))
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        <td>
+                            <select name="SemiPredictions[@c.Name]">
+                                <option value="none">none</option>
+                                <option value="DoesNotReachFinal">Does Not Reach Final</option>
+                            </select>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Final table -->
+        <table id="table-final" border="1" style="border-collapse: collapse; width: 30%;">
+            <thead>
+                <tr><th colspan="2">Final</th></tr>
+                <tr><th>Country</th><th>Prediction</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.Countries.Where(c => c.IsInFinal))
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        <td>
+                            <select name="FinalPredictions[@c.Name]">
+                                <option value="none">none</option>
+                                <option value="Bottom3">Bottom 3</option>
+                                @for (int i = 1; i <= 10; i++)
+                                {
+                                    <option value="@i">@i</option>
+                                }
+                            </select>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Save Predictions</button>
+</form>
+
+<!-- Linked JS file -->
+<script src="~/js/predictions.js"></script>

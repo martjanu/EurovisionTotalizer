@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar" role="navigation">
+            <div class="sidebar-brand">Eurovision</div>
+            <nav class="sidebar-nav">
+                <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
+                <a asp-controller="DataEntry" asp-action="DataEntry" class="nav-link">Data Entry</a>
+                <a asp-controller="Predictions" asp-action="Predictions" class="nav-link">Prediction Tables</a>
+                <a asp-controller="Leaderboard" asp-action="Leaderboard" class="nav-link">Leaderboard</a>
+            </nav>
+        </aside>
+
+        <main class="content" role="main">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>
