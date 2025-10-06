@@ -1,0 +1,47 @@
+﻿@model EurovisionTotalizer.API.ViewModels.RepositoriesViewModel
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="page-title">Select a menu item</h1>
+<p>Use the left menu to open pages.</p>
+
+<div class="tables-container">
+    @foreach (var table in Model.Tables)
+    {
+        <div class="table-wrapper">
+            <h2>@table.Title</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        @foreach (var participantName in table.ParticipantNames)
+                        {
+                            <th>@participantName</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var row in table.Rows)
+                    {
+                        <tr>
+                            <td>@row.CountryName</td>
+                            @foreach (var participantName in table.ParticipantNames)
+                            {
+                                <td>
+                                    @(
+                                        row.Predictions.ContainsKey(participantName)
+                                        ? row.Predictions[participantName]
+                                        : "-"
+                                        )
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
