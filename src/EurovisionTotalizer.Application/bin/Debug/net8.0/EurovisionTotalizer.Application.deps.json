@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EurovisionTotalizer.Application/1.0.0": {
+        "dependencies": {
+          "EurovisionTotalizer.Domain": "1.0.0"
+        },
+        "runtime": {
+          "EurovisionTotalizer.Application.dll": {}
+        }
+      },
+      "EurovisionTotalizer.Domain/1.0.0": {
+        "runtime": {
+          "EurovisionTotalizer.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EurovisionTotalizer.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EurovisionTotalizer.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

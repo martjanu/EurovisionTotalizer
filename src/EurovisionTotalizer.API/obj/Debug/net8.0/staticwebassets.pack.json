@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EurovisionTotalizer.API.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EurovisionTotalizer.API.vbzz02x9gm.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\css\\Home.css",
+      "PackagePath": "staticwebassets\\css\\Home.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\css\\dataentry.css",
+      "PackagePath": "staticwebassets\\css\\dataentry.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\data\\countries.json",
+      "PackagePath": "staticwebassets\\data\\countries.json"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\data\\participants.json",
+      "PackagePath": "staticwebassets\\data\\participants.json"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\js\\dataentry-create.js",
+      "PackagePath": "staticwebassets\\js\\dataentry-create.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\js\\dataentry-update.js",
+      "PackagePath": "staticwebassets\\js\\dataentry-update.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\js\\predictions.js",
+      "PackagePath": "staticwebassets\\js\\predictions.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EurovisionTotalizer.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EurovisionTotalizer.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EurovisionTotalizer.API.props",
+      "PackagePath": "build\\EurovisionTotalizer.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EurovisionTotalizer.API.props",
+      "PackagePath": "buildMultiTargeting\\EurovisionTotalizer.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EurovisionTotalizer.API.props",
+      "PackagePath": "buildTransitive\\EurovisionTotalizer.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

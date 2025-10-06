@@ -1,0 +1,16 @@
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\bin\Debug\net8.0\EurovisionTotalizer.Application.deps.json
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\bin\Debug\net8.0\EurovisionTotalizer.Application.dll
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\bin\Debug\net8.0\EurovisionTotalizer.Application.pdb
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\bin\Debug\net8.0\EurovisionTotalizer.Domain.dll
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\bin\Debug\net8.0\EurovisionTotalizer.Domain.pdb
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\EurovisionTotalizer.Application.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\EurovisionTotalizer.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\EurovisionTotalizer.Application.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\EurovisionTotalizer.Application.AssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\EurovisionTotalizer.Application.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\EurovisionTotalizer.Application.sourcelink.json
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\Eurovisi.2CF97E89.Up2Date
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\EurovisionTotalizer.Application.dll
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\refint\EurovisionTotalizer.Application.dll
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\EurovisionTotalizer.Application.pdb
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Application\obj\Debug\net8.0\ref\EurovisionTotalizer.Application.dll

@@ -1,0 +1,8 @@
+wwwroot\css\dataentry.css
+wwwroot\css\Home.css
+wwwroot\css\site.css
+wwwroot\data\countries.json
+wwwroot\data\participants.json
+wwwroot\js\dataentry-create.js
+wwwroot\js\dataentry-update.js
+wwwroot\js\predictions.js

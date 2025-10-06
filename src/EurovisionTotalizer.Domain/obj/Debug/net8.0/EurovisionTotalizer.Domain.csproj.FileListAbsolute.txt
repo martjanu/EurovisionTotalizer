@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\bin\Debug\net8.0\EurovisionTotalizer.Domain.deps.json
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\bin\Debug\net8.0\EurovisionTotalizer.Domain.dll
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\bin\Debug\net8.0\EurovisionTotalizer.Domain.pdb
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\obj\Debug\net8.0\EurovisionTotalizer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\obj\Debug\net8.0\EurovisionTotalizer.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\obj\Debug\net8.0\EurovisionTotalizer.Domain.AssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\obj\Debug\net8.0\EurovisionTotalizer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\obj\Debug\net8.0\EurovisionTotalizer.Domain.sourcelink.json
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\obj\Debug\net8.0\EurovisionTotalizer.Domain.dll
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\obj\Debug\net8.0\refint\EurovisionTotalizer.Domain.dll
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\obj\Debug\net8.0\EurovisionTotalizer.Domain.pdb
+C:\Users\Administrator\Documents\GitHub\EurovisionTotalizer\src\EurovisionTotalizer.Domain\obj\Debug\net8.0\ref\EurovisionTotalizer.Domain.dll

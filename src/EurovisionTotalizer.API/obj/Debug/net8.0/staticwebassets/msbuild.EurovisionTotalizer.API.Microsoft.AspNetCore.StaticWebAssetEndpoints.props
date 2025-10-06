@@ -1,0 +1,112 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/css/dataentry.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dataentry.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FdrzMfxl7gC3n5NpqTZZ22lxvVOPJWWYZ3POvQRl/bM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1297"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FdrzMfxl7gC3n5NpqTZZ22lxvVOPJWWYZ3POvQRl/bM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 23 Sep 2025 13:07:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/css/dataentry.jm8t5w32d3.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dataentry.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jm8t5w32d3"},{"Name":"integrity","Value":"sha256-FdrzMfxl7gC3n5NpqTZZ22lxvVOPJWWYZ3POvQRl/bM="},{"Name":"label","Value":"_content/EurovisionTotalizer.API/css/dataentry.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1297"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FdrzMfxl7gC3n5NpqTZZ22lxvVOPJWWYZ3POvQRl/bM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 23 Sep 2025 13:07:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/css/Home.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Home.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RekvoxxZcjeJmgbRKYVAxMWXwap14HnMY0c2d6bCcEw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1020"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RekvoxxZcjeJmgbRKYVAxMWXwap14HnMY0c2d6bCcEw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 08:11:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/css/Home.zeerlk9sjl.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Home.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zeerlk9sjl"},{"Name":"integrity","Value":"sha256-RekvoxxZcjeJmgbRKYVAxMWXwap14HnMY0c2d6bCcEw="},{"Name":"label","Value":"_content/EurovisionTotalizer.API/css/Home.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1020"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RekvoxxZcjeJmgbRKYVAxMWXwap14HnMY0c2d6bCcEw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 08:11:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/css/site.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0Xveu68Sn7hnt2LYXIJRMC2gGysfDe13T0Latn4uw4M="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1966"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220Xveu68Sn7hnt2LYXIJRMC2gGysfDe13T0Latn4uw4M=\u0022"},{"Name":"Last-Modified","Value":"Tue, 23 Sep 2025 12:36:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/css/site.xgf6cfky9r.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xgf6cfky9r"},{"Name":"integrity","Value":"sha256-0Xveu68Sn7hnt2LYXIJRMC2gGysfDe13T0Latn4uw4M="},{"Name":"label","Value":"_content/EurovisionTotalizer.API/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1966"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220Xveu68Sn7hnt2LYXIJRMC2gGysfDe13T0Latn4uw4M=\u0022"},{"Name":"Last-Modified","Value":"Tue, 23 Sep 2025 12:36:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/data/countries.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\countries.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/YDx9rzhmfODJdfz8x6JC5gDmoDVminEg40nbxKOdBQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3674"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022/YDx9rzhmfODJdfz8x6JC5gDmoDVminEg40nbxKOdBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 16:23:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/data/countries.zk1swqgvno.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\countries.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zk1swqgvno"},{"Name":"integrity","Value":"sha256-/YDx9rzhmfODJdfz8x6JC5gDmoDVminEg40nbxKOdBQ="},{"Name":"label","Value":"_content/EurovisionTotalizer.API/data/countries.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3674"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022/YDx9rzhmfODJdfz8x6JC5gDmoDVminEg40nbxKOdBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 16:23:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/data/participants.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\participants.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-o4Z3/OPpJXZurMLApHMlPkuFiZMlVja9RdKGcvF3mCY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"31230"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022o4Z3/OPpJXZurMLApHMlPkuFiZMlVja9RdKGcvF3mCY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 13:53:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/data/participants.vlpg96up5e.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\participants.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vlpg96up5e"},{"Name":"integrity","Value":"sha256-o4Z3/OPpJXZurMLApHMlPkuFiZMlVja9RdKGcvF3mCY="},{"Name":"label","Value":"_content/EurovisionTotalizer.API/data/participants.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"31230"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022o4Z3/OPpJXZurMLApHMlPkuFiZMlVja9RdKGcvF3mCY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 13:53:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/EurovisionTotalizer.API.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\EurovisionTotalizer.API.vbzz02x9gm.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mzUoGaK7fq5j7CvpNpa1vy4/XUzTQKgR3O39blQBBdE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1141"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022mzUoGaK7fq5j7CvpNpa1vy4/XUzTQKgR3O39blQBBdE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 16:03:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/EurovisionTotalizer.API.vbzz02x9gm.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\EurovisionTotalizer.API.vbzz02x9gm.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vbzz02x9gm"},{"Name":"integrity","Value":"sha256-mzUoGaK7fq5j7CvpNpa1vy4/XUzTQKgR3O39blQBBdE="},{"Name":"label","Value":"_content/EurovisionTotalizer.API/EurovisionTotalizer.API.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1141"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022mzUoGaK7fq5j7CvpNpa1vy4/XUzTQKgR3O39blQBBdE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 16:03:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/js/dataentry-create.6rbv2686gz.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dataentry-create.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6rbv2686gz"},{"Name":"integrity","Value":"sha256-vpgsvBTJbESG9pVWTZoo63bL4f9DLmYRQdkiGsQbDAY="},{"Name":"label","Value":"_content/EurovisionTotalizer.API/js/dataentry-create.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"466"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022vpgsvBTJbESG9pVWTZoo63bL4f9DLmYRQdkiGsQbDAY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 24 Sep 2025 06:11:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/js/dataentry-create.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dataentry-create.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vpgsvBTJbESG9pVWTZoo63bL4f9DLmYRQdkiGsQbDAY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"466"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022vpgsvBTJbESG9pVWTZoo63bL4f9DLmYRQdkiGsQbDAY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 24 Sep 2025 06:11:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/js/dataentry-update.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dataentry-update.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-M7nxyAPfu72lETvL4FsF8\u002BUUUoPEaI4dGWu7izMYrQg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1158"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022M7nxyAPfu72lETvL4FsF8\u002BUUUoPEaI4dGWu7izMYrQg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 24 Sep 2025 06:32:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/js/dataentry-update.xj43d450x2.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dataentry-update.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xj43d450x2"},{"Name":"integrity","Value":"sha256-M7nxyAPfu72lETvL4FsF8\u002BUUUoPEaI4dGWu7izMYrQg="},{"Name":"label","Value":"_content/EurovisionTotalizer.API/js/dataentry-update.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1158"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022M7nxyAPfu72lETvL4FsF8\u002BUUUoPEaI4dGWu7izMYrQg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 24 Sep 2025 06:32:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/js/predictions.10jo79336s.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\predictions.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"10jo79336s"},{"Name":"integrity","Value":"sha256-z27NZ0CWWOrteQygOz4oN2cO/9UyoyqnBepoIeN4zHE="},{"Name":"label","Value":"_content/EurovisionTotalizer.API/js/predictions.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2600"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022z27NZ0CWWOrteQygOz4oN2cO/9UyoyqnBepoIeN4zHE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 08:15:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EurovisionTotalizer.API/js/predictions.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\predictions.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-z27NZ0CWWOrteQygOz4oN2cO/9UyoyqnBepoIeN4zHE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2600"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022z27NZ0CWWOrteQygOz4oN2cO/9UyoyqnBepoIeN4zHE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 08:15:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

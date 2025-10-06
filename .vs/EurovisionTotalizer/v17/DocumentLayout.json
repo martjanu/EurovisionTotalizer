@@ -1,0 +1,1279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.application\\services\\home\\homeservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|solutionrelative:src\\eurovisiontotalizer.application\\services\\home\\homeservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\models\\repositoriesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\models\\repositoriesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\models\\tablerowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\models\\tablerowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\models\\tableviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\models\\tableviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.application\\dtos\\repositoriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|solutionrelative:src\\eurovisiontotalizer.application\\dtos\\repositoriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.application\\dtos\\tabledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|solutionrelative:src\\eurovisiontotalizer.application\\dtos\\tabledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.application\\dtos\\tablerowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|solutionrelative:src\\eurovisiontotalizer.application\\dtos\\tablerowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.application\\services\\home\\ihomeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|solutionrelative:src\\eurovisiontotalizer.application\\services\\home\\ihomeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\views\\dataentry\\dataentry.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\views\\dataentry\\dataentry.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\models\\leaderboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\models\\leaderboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.application\\eurovisiontotalizer.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AEE584EC-BA94-4A8A-BC0E-9B66D28BABC4}|src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj|solutionrelative:src\\eurovisiontotalizer.application\\eurovisiontotalizer.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\controllers\\dataentrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\controllers\\dataentrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\controllers\\leaderboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\controllers\\leaderboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\controllers\\predictionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\controllers\\predictionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\persistance\\repositories\\jsonstoragerepositorytests .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\persistance\\repositories\\jsonstoragerepositorytests .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\persistence\\repositories\\jsonstoragerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\persistence\\repositories\\jsonstoragerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\persistence\\repositories\\ijsonstoragerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\persistence\\repositories\\ijsonstoragerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\persistence\\repositories\\jsonstoragefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\persistence\\repositories\\jsonstoragefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\views\\predictions\\predictions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\views\\predictions\\predictions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\views\\leaderboard\\leaderboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\views\\leaderboard\\leaderboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\scorers\\iscorerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\scorers\\iscorerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\scorers\\ipredictionscorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\scorers\\ipredictionscorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\scorers\\scorerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\scorers\\scorerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\scorers\\top10predictionscorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\scorers\\top10predictionscorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\scorer\\top10predictionscorertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\scorer\\top10predictionscorertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\scorer\\finalpredictionscorertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\scorer\\finalpredictionscorertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\scorer\\bottom3predictionscorertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\scorer\\bottom3predictionscorertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\scorer\\semifinalpredictionscorertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\scorer\\semifinalpredictionscorertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\scorers\\semifinalpredictionscorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\scorers\\semifinalpredictionscorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\scorer\\scorerfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\scorer\\scorerfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\scorers\\finalpredictionscorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\scorers\\finalpredictionscorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\rutovisiontotalizer.domain.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\rutovisiontotalizer.domain.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\scorers\\bottom3predictionscorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\scorers\\bottom3predictionscorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\rankers\\iparticipantranker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\rankers\\iparticipantranker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\ranker\\rankingstrategytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\ranker\\rankingstrategytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\rankers\\rankingstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\rankers\\rankingstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\ranker\\participantrankertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\ranker\\participantrankertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\rankers\\participantranker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\rankers\\participantranker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\rankers\\rankingfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\rankers\\rankingfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\ranker\\rankingfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\ranker\\rankingfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\persistence\\repositories\\ijsonstoragefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\persistence\\repositories\\ijsonstoragefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\persistance\\repositories\\test.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\persistance\\repositories\\test.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\persistance\\repositories\\jsonstoragefactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\persistance\\repositories\\jsonstoragefactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\persistance\\serializer\\systemtextjsonserializertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\persistance\\serializer\\systemtextjsonserializertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\persistence\\serializers\\systemtextjsonserializer .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\persistence\\serializers\\systemtextjsonserializer .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\persistance\\serializer\\jsonserializerfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\persistance\\serializer\\jsonserializerfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\persistence\\serializers\\jsonserializerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\persistence\\serializers\\jsonserializerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\calculators\\scorecalculatorfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\calculators\\scorecalculatorfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\calculators\\scorecalculatorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\calculators\\scorecalculatorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\tests\\rutovisiontotalizer.domain.tests\\calculators\\scorecalculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC62C013-219D-4816-9177-F82AB6DFA3E6}|tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj|solutionrelative:tests\\rutovisiontotalizer.domain.tests\\calculators\\scorecalculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\calculators\\scorecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\calculators\\scorecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\models\\iprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\models\\iprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\eurovisiontotalizer.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\eurovisiontotalizer.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\models\\finalprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\models\\finalprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\models\\semifinalprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\models\\semifinalprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\calculators\\iscorecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\calculators\\iscorecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\persistence\\serializers\\ijsonserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\persistence\\serializers\\ijsonserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\models\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\models\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\wwwroot\\js\\predictions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\wwwroot\\js\\predictions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\wwwroot\\data\\countries.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\wwwroot\\data\\countries.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\enums\\predictiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\enums\\predictiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\wwwroot\\data\\participants.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\wwwroot\\data\\participants.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\wwwroot\\js\\dataentry-update.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\wwwroot\\js\\dataentry-update.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\wwwroot\\js\\dataentry-create.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\wwwroot\\js\\dataentry-create.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\models\\ihasname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\models\\ihasname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\views\\dataentry\\dataentry.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\views\\dataentry\\dataentry.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\wwwroot\\css\\dataentry.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\wwwroot\\css\\dataentry.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.api\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A98457AC-9F6C-4C00-8B26-374D3A6902BB}|src\\EurovisionTotalizer.API\\EurovisionTotalizer.API.csproj|solutionrelative:src\\eurovisiontotalizer.api\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|c:\\users\\administrator\\documents\\github\\eurovisiontotalizer\\src\\eurovisiontotalizer.domain\\enums\\semifinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AFD6A-A517-4C8E-8DB2-C911F751DDD6}|src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj|solutionrelative:src\\eurovisiontotalizer.domain\\enums\\semifinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IHomeService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\Services\\Home\\IHomeService.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Application\\Services\\Home\\IHomeService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\Services\\Home\\IHomeService.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Application\\Services\\Home\\IHomeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T17:58:46.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TableRowDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\DTOs\\TableRowDto.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Application\\DTOs\\TableRowDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\DTOs\\TableRowDto.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Application\\DTOs\\TableRowDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T15:15:39.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TableDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\DTOs\\TableDto.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Application\\DTOs\\TableDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\DTOs\\TableDto.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Application\\DTOs\\TableDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T15:13:41.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TableViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Models\\TableViewModel.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Models\\TableViewModel.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Models\\TableViewModel.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Models\\TableViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T14:59:54.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TableRowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Models\\TableRowViewModel.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Models\\TableRowViewModel.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Models\\TableRowViewModel.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Models\\TableRowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T14:58:17.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T10:27:58.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T12:14:37.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepositoriesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Models\\RepositoriesViewModel.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Models\\RepositoriesViewModel.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Models\\RepositoriesViewModel.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Models\\RepositoriesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T13:37:04.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeService .cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\Services\\Home\\HomeService .cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Application\\Services\\Home\\HomeService .cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\Services\\Home\\HomeService .cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Application\\Services\\Home\\HomeService .cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAYwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T14:27:28.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RepositoriesDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\DTOs\\RepositoriesDto.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Application\\DTOs\\RepositoriesDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\DTOs\\RepositoriesDto.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Application\\DTOs\\RepositoriesDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T14:32:54.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataEntry.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\DataEntry\\DataEntry.cshtml",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Views\\DataEntry\\DataEntry.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\DataEntry\\DataEntry.cshtml",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Views\\DataEntry\\DataEntry.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAlwBsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T12:34:29.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Program.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Program.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAYwD8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T10:10:20.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LeaderboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Models\\LeaderboardViewModel.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Models\\LeaderboardViewModel.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Models\\LeaderboardViewModel.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Models\\LeaderboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T10:40:34.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PredictionsCOntroller.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Controllers\\PredictionsCOntroller.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Controllers\\PredictionsCOntroller.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Controllers\\PredictionsCOntroller.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Controllers\\PredictionsCOntroller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T09:15:21.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "JsonStorageRepositoryTests .cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\JsonStorageRepositoryTests .cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\JsonStorageRepositoryTests .cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\JsonStorageRepositoryTests .cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\JsonStorageRepositoryTests .cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAowEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:12:36.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DataEntryController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Controllers\\DataEntryController.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Controllers\\DataEntryController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Controllers\\DataEntryController.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Controllers\\DataEntryController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAuwHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T14:24:59.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EurovisionTotalizer.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Application\\EurovisionTotalizer.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-30T14:24:54.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "JsonStorageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\JsonStorageRepository.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\JsonStorageRepository.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\JsonStorageRepository.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\JsonStorageRepository.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAmwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:04:24.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IJsonStorageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\IJsonStorageRepository.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\IJsonStorageRepository.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\IJsonStorageRepository.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\IJsonStorageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:09:31.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LeaderboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Controllers\\LeaderboardController.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Controllers\\LeaderboardController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Controllers\\LeaderboardController.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Controllers\\LeaderboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T07:47:41.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "JsonStorageFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\JsonStorageFactory.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\JsonStorageFactory.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\JsonStorageFactory.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\JsonStorageFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:47:51.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T12:17:28.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Predictions.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\Predictions\\Predictions.cshtml",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Views\\Predictions\\Predictions.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\Predictions\\Predictions.cshtml",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Views\\Predictions\\Predictions.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T12:35:24.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Leaderboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\Leaderboard\\Leaderboard.cshtml",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Views\\Leaderboard\\Leaderboard.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\Leaderboard\\Leaderboard.cshtml",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Views\\Leaderboard\\Leaderboard.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T12:36:08.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Top10PredictionScorerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\Top10PredictionScorerTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\Top10PredictionScorerTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\Top10PredictionScorerTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\Top10PredictionScorerTests.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAIwEMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:51:11.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Top10PredictionScorer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\Top10PredictionScorer.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Scorers\\Top10PredictionScorer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\Top10PredictionScorer.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Scorers\\Top10PredictionScorer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:15:40.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Bottom3PredictionScorer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\Bottom3PredictionScorer.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Scorers\\Bottom3PredictionScorer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\Bottom3PredictionScorer.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Scorers\\Bottom3PredictionScorer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:15:28.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Bottom3PredictionScorerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\Bottom3PredictionScorerTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\Bottom3PredictionScorerTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\Bottom3PredictionScorerTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\Bottom3PredictionScorerTests.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowFQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:43:37.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FinalPredictionScorerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\FinalPredictionScorerTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\FinalPredictionScorerTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\FinalPredictionScorerTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\FinalPredictionScorerTests.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:44:55.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IScorerFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\IScorerFactory.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Scorers\\IScorerFactory.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\IScorerFactory.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Scorers\\IScorerFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:45:09.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IPredictionScorer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\IPredictionScorer.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Scorers\\IPredictionScorer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\IPredictionScorer.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Scorers\\IPredictionScorer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:21:43.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ScorerFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\ScorerFactory.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Scorers\\ScorerFactory.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\ScorerFactory.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Scorers\\ScorerFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:45:48.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ScorerFactoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\ScorerFactoryTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\ScorerFactoryTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\ScorerFactoryTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\ScorerFactoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:47:12.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SemiFinalPredictionScorerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\SemiFinalPredictionScorerTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\SemiFinalPredictionScorerTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\SemiFinalPredictionScorerTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Scorer\\SemiFinalPredictionScorerTests.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAewFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:48:52.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IParticipantRanker.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Rankers\\IParticipantRanker.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Rankers\\IParticipantRanker.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Rankers\\IParticipantRanker.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Rankers\\IParticipantRanker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:55:45.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "RankingStrategyTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\RankingStrategyTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\RankingStrategyTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\RankingStrategyTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\RankingStrategyTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:40:18.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SemiFinalPredictionScorer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\SemiFinalPredictionScorer.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Scorers\\SemiFinalPredictionScorer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\SemiFinalPredictionScorer.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Scorers\\SemiFinalPredictionScorer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:14:55.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ParticipantRankerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\ParticipantRankerTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\ParticipantRankerTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\ParticipantRankerTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\ParticipantRankerTests.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:38:36.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "RankingFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Rankers\\RankingFactory.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Rankers\\RankingFactory.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Rankers\\RankingFactory.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Rankers\\RankingFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T05:34:10.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "RankingFactoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\RankingFactoryTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\RankingFactoryTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\RankingFactoryTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Ranker\\RankingFactoryTests.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:36:56.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FinalPredictionScorer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\FinalPredictionScorer.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Scorers\\FinalPredictionScorer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Scorers\\FinalPredictionScorer.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Scorers\\FinalPredictionScorer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:15:10.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IJsonStorageFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\IJsonStorageFactory.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\IJsonStorageFactory.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\IJsonStorageFactory.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Persistence\\Repositories\\IJsonStorageFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:49:18.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RutovisionTotalizer.Domain.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\RutovisionTotalizer.Domain.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-22T12:00:24.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "test.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\test.json",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\test.json",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\test.json",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\test.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-30T12:29:26.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "JsonStorageFactoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\JsonStorageFactoryTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\JsonStorageFactoryTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\JsonStorageFactoryTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Repositories\\JsonStorageFactoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:11:26.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "RankingStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Rankers\\RankingStrategy.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Rankers\\RankingStrategy.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Rankers\\RankingStrategy.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Rankers\\RankingStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:48:39.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ParticipantRanker.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Rankers\\ParticipantRanker.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Rankers\\ParticipantRanker.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Rankers\\ParticipantRanker.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Rankers\\ParticipantRanker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T11:35:49.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ScoreCalculatorFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Calculators\\ScoreCalculatorFactory.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Calculators\\ScoreCalculatorFactory.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Calculators\\ScoreCalculatorFactory.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Calculators\\ScoreCalculatorFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T16:04:59.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ScoreCalculatorFactoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Calculators\\ScoreCalculatorFactoryTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Calculators\\ScoreCalculatorFactoryTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Calculators\\ScoreCalculatorFactoryTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Calculators\\ScoreCalculatorFactoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:34:11.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "JsonSerializerFactoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Serializer\\JsonSerializerFactoryTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Serializer\\JsonSerializerFactoryTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Serializer\\JsonSerializerFactoryTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Serializer\\JsonSerializerFactoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:36:26.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "SystemTextJsonSerializerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Serializer\\SystemTextJsonSerializerTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Serializer\\SystemTextJsonSerializerTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Serializer\\SystemTextJsonSerializerTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Persistance\\Serializer\\SystemTextJsonSerializerTests.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAEwDIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:37:36.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "JsonSerializerFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\JsonSerializerFactory.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\JsonSerializerFactory.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\JsonSerializerFactory.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\JsonSerializerFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:25:55.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ScoreCalculatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Calculators\\ScoreCalculatorTests.cs",
+              "RelativeDocumentMoniker": "tests\\RutovisionTotalizer.Domain.Tests\\Calculators\\ScoreCalculatorTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\tests\\RutovisionTotalizer.Domain.Tests\\Calculators\\ScoreCalculatorTests.cs",
+              "RelativeToolTip": "tests\\RutovisionTotalizer.Domain.Tests\\Calculators\\ScoreCalculatorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:29:36.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "SystemTextJsonSerializer .cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\SystemTextJsonSerializer .cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\SystemTextJsonSerializer .cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\SystemTextJsonSerializer .cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\SystemTextJsonSerializer .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:15:13.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ScoreCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Calculators\\ScoreCalculator.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Calculators\\ScoreCalculator.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Calculators\\ScoreCalculator.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Calculators\\ScoreCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T07:24:27.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "IPrediction.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\IPrediction.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Models\\IPrediction.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\IPrediction.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Models\\IPrediction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:27:32.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "EurovisionTotalizer.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\EurovisionTotalizer.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-04T10:31:11.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "FinalPrediction.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\FinalPrediction.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Models\\FinalPrediction.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\FinalPrediction.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Models\\FinalPrediction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T08:47:20.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "SemiFinalPrediction.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\SemiFinalPrediction.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Models\\SemiFinalPrediction.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\SemiFinalPrediction.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Models\\SemiFinalPrediction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T10:31:44.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IScoreCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Calculators\\IScoreCalculator.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Calculators\\IScoreCalculator.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Calculators\\IScoreCalculator.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Calculators\\IScoreCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:22:02.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "IJsonSerializer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\IJsonSerializer.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\IJsonSerializer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\IJsonSerializer.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Persistence\\Serializers\\IJsonSerializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:13:24.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Country.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\Country.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Models\\Country.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\Country.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Models\\Country.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T10:59:57.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Participant.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\Participant.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Models\\Participant.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\Participant.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Models\\Participant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T10:38:16.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "predictions.js",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\js\\predictions.js",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\wwwroot\\js\\predictions.js",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\js\\predictions.js",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\wwwroot\\js\\predictions.js",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-30T08:15:10.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Home.css",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\css\\Home.css",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\wwwroot\\css\\Home.css",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\css\\Home.css",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\wwwroot\\css\\Home.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T08:11:25.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "countries.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\data\\countries.json",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\wwwroot\\data\\countries.json",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\data\\countries.json",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\wwwroot\\data\\countries.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-23T14:08:28.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "PredictionType.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Enums\\PredictionType.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Enums\\PredictionType.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Enums\\PredictionType.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Enums\\PredictionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T10:32:41.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "participants.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\data\\participants.json",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\wwwroot\\data\\participants.json",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\data\\participants.json",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\wwwroot\\data\\participants.json",
+              "ViewState": "AgIAAMsBAAAAAAAAAAAAAOABAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-23T13:58:27.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T12:40:33.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "dataentry-update.js",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\js\\dataentry-update.js",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\wwwroot\\js\\dataentry-update.js",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\js\\dataentry-update.js",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\wwwroot\\js\\dataentry-update.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-24T06:10:45.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "dataentry-create.js",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\js\\dataentry-create.js",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\wwwroot\\js\\dataentry-create.js",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\js\\dataentry-create.js",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\wwwroot\\js\\dataentry-create.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-24T06:10:19.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "IHasName.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\IHasName.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Models\\IHasName.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Models\\IHasName.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Models\\IHasName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T07:12:55.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "DataEntry.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\DataEntry\\DataEntry.cshtml.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Views\\DataEntry\\DataEntry.cshtml.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\DataEntry\\DataEntry.cshtml.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Views\\DataEntry\\DataEntry.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T13:13:38.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-23T12:43:24.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "dataentry.css",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\css\\dataentry.css",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\wwwroot\\css\\dataentry.css",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\css\\dataentry.css",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\wwwroot\\css\\dataentry.css",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-23T13:06:30.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.API\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.API\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "src\\EurovisionTotalizer.API\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAIwFsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-23T12:19:11.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "SemiFinal.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Enums\\SemiFinal.cs",
+              "RelativeDocumentMoniker": "src\\EurovisionTotalizer.Domain\\Enums\\SemiFinal.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\EurovisionTotalizer\\src\\EurovisionTotalizer.Domain\\Enums\\SemiFinal.cs",
+              "RelativeToolTip": "src\\EurovisionTotalizer.Domain\\Enums\\SemiFinal.cs",
+              "ViewState": "AgIAAAAAAAAAbH+6a3/+vwQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T13:53:17.152Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
