@@ -8,6 +8,7 @@ The app helps track player predictions, calculate points, and display results au
 Every year, our group of friends organizes a Eurovision prediction contest — guessing which countries will qualify for the final and predicting the final rankings.
 
 Game Rules
+
 🥈 Semifinals
 
 Each participant predicts which countries will NOT qualify for the final.
